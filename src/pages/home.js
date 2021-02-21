@@ -27,7 +27,9 @@ const HomePage = () => {
                 <ul>
                     <li>
                         <div class="experience-item-title">
-                            Santex
+                            <div class="experience-item-title-position">Senior Software Engineer</div>
+                            <div class="experience-item-title-separator">@</div>
+                            <div class="experience-item-title-job">Santex</div>
                         </div>
                         <div class="experience-item-subtitle">
                             2014 - current
@@ -35,7 +37,9 @@ const HomePage = () => {
                     </li>
                     <li>
                         <div class="experience-item-title">
-                            Avantica
+                            <div class="experience-item-title-position">Software Engineer</div>
+                            <div class="experience-item-title-separator">@</div>
+                            <div class="experience-item-title-job">Avantica</div>
                         </div>
                         <div class="experience-item-subtitle">
                             2012 - 2014

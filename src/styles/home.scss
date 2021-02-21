@@ -92,4 +92,11 @@ html {
 
 .experience-item-title {
   font-weight: 400;
+  div {
+    display: inline-block;
+  }
+  .experience-item-title-separator {
+    font-weight: 200;
+    margin: 0 5px 0 5px;
+  }
 }
