@@ -46,3 +46,7 @@
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+
+    - [Integrate i18next](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-i18next/)
+
+    - [Integrate Source Filesystem](https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/)
