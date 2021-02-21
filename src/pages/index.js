@@ -119,6 +119,7 @@ const IndexPage = () => {
           😎
         </span>
       </p>
+      <Link to="/home">Home</Link>
       <ul style={listStyles}>
         <li style={docLinkStyle}>
           <a

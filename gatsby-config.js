@@ -40,6 +40,15 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Montserrat\:200,300,400,600,700,800,900`,
+        ],
+        display: 'swap'
+      }
     }
 ],
 };
