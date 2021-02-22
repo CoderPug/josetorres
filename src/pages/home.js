@@ -20,10 +20,13 @@ const HomePage = () => {
             <div class="content">
                 <div class="section-main">
                     <div class="main-image">
-                        <img src={AvatarImage} alt="Jose Torres avatar" class="avatar"/>
+                        <img src={AvatarImage} alt="Jose Torres avatar" class="avatar"/>          
                     </div>
                     <div class="main-title">
                         José Torres
+                    </div>
+                    <div>
+                        Linkedin | Github | Twitter
                     </div>
                     <div class="main-description">
                         Result-oriented, agile-enthusiast software engineer. I love to put a lot of effort on the small design details that will improve the usability of a product. I consider myself to be in a constant learning and I like to perform researches on new technologies during my free time.
@@ -35,50 +38,79 @@ const HomePage = () => {
                         Platforms: Mac OSX (4+), UNIX/Linux (3+) Cloud services: Parse (1+)
                     </div>
                 </div>
-                <div class ="section-experience">
+                <div class ="section-list">
+                    <div class="section-list-title">Experience</div>
                     <ul>
                         <li>
-                            <div class="experience-item-title">
-                                <div class="experience-item-title-position">Senior Software Engineer</div>
-                                <div class="experience-item-title-separator">@</div>
-                                <div class="experience-item-title-job">Santex</div>
+                            <div class="section-list-item-title">
+                                <div class="section-list-item-title-a">Senior Software Engineer</div>
+                                <div class="section-list-item-title-separator">@</div>
+                                <div class="section-list-item-b">Santex</div>
                             </div>
-                            <div class="experience-item-subtitle">
+                            <div class="section-list-item-subtitle">
                                 2014 - current
                             </div>
                         </li>
                         <li>
-                            <div class="experience-item-title">
-                                <div class="experience-item-title-position">Teaching assistant</div>
-                                <div class="experience-item-title-separator">@</div>
-                                <div class="experience-item-title-job">UPC</div>
+                            <div class="section-list-item-title">
+                                <div class="section-list-item-title-a">Teaching assistant</div>
+                                <div class="section-list-item-title-separator">@</div>
+                                <div class="section-list-item-b">UPC</div>
                             </div>
-                            <div class="experience-item-subtitle">
+                            <div class="section-list-item-subtitle">
                                 2020 - current
                             </div>
                         </li>
                         <li>
-                            <div class="experience-item-title">
-                                <div class="experience-item-title-position">Software Engineer</div>
-                                <div class="experience-item-title-separator">@</div>
-                                <div class="experience-item-title-job">Avantica</div>
+                            <div class="section-list-item-title">
+                                <div class="section-list-item-title-a">Software Engineer</div>
+                                <div class="section-list-item-title-separator">@</div>
+                                <div class="section-list-item-b">Avantica</div>
                             </div>
-                            <div class="experience-item-subtitle">
+                            <div class="section-list-item-subtitle">
                                 2012 - 2014
                             </div>
                         </li>
                         <li>
-                            <div class="experience-item-title">
-                                <div class="experience-item-title-position">Intern</div>
-                                <div class="experience-item-title-separator">@</div>
-                                <div class="experience-item-title-job">Online Studio Productions</div>
+                            <div class="section-list-item-title">
+                                <div class="section-list-item-title-a">Intern</div>
+                                <div class="section-list-item-title-separator">@</div>
+                                <div class="section-list-item-b">Online Studio Productions</div>
                             </div>
-                            <div class="experience-item-subtitle">
+                            <div class="section-list-item-subtitle">
                                 2011 - 2012
                             </div>
                         </li>
                     </ul>
                 </div>
+
+                <div class="section-list">
+                    <div class="section-list-title">Education</div>
+                    <ul>
+                        <li>
+                            <div class="section-list-item-title">
+                                <div class="section-list-item-title-a">Master in Systems and IT Management</div>
+                                <div class="section-list-item-title-separator">|</div>
+                                <div>2020 - 2021</div>
+                            </div>
+                            <div class="section-list-item-subtitle">
+                                Universidad Peruana de Ciencias Aplicadas
+                            </div>
+                        </li>
+                        <li>
+                            <div class="section-list-item-title">
+                                <div class="section-list-item-title-a">Software Engineer Degree</div>
+                                <div class="section-list-item-title-separator">|</div>
+                                <div>2008 - 2014</div>
+                            </div>
+                            <div class="section-list-item-subtitle">
+                                Universidad Peruana de Ciencias Aplicadas
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="section-break-5" />
             </div>
         </body>
       </html>

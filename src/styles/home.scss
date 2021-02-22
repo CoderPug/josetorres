@@ -102,7 +102,7 @@ header {
   margin-top: 20px;
 }
 
-.section-experience {
+.section-list {
   margin-top: 20px;
   ul {
     list-style-type: none;
@@ -112,13 +112,43 @@ header {
   }
 }
 
-.experience-item-title {
+.section-list-title {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.section-list-item-title {
   font-weight: 400;
   div {
     display: inline-block;
   }
-  .experience-item-title-separator {
+  .section-list-item-title-separator {
     font-weight: 200;
     margin: 0 5px 0 5px;
+  }
+}
+
+/* Section Break 5 */
+.section-break-5 {
+  background-color: transparent;
+  border: 0;
+  border-top: 1px solid rgb(200, 200, 200);
+  display: block;
+  height: 0;
+  margin: 3rem auto 3rem;
+  text-align: center;
+  width: 50%;
+
+  &:before {
+    background-color: snow;
+    color: darken(rgb(200, 200, 200), 20%);
+    content: 'j';
+    display: inline-block;
+    left: 50%;
+    letter-spacing: 0;
+    text-indent: 0;
+    text-rendering: geometricPrecision;
+    transform: translateY(-65%);
+    width: 15px;
   }
 }
