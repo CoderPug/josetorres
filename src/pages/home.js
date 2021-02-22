@@ -4,6 +4,7 @@ import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 import Navigation from "../components/navigation"
 
 import "../styles/home.scss"
+import AvatarImage from '../images/jose-torres-avatar.jpg'
 
 const HomePage = () => {
     const {t} = useTranslation();
@@ -18,6 +19,9 @@ const HomePage = () => {
             </header>
             <div class="content">
                 <div class="section-main">
+                    <div class="main-image">
+                        <img src={AvatarImage} alt="Jose Torres avatar" class="avatar"/>
+                    </div>
                     <div class="main-title">
                         José Torres
                     </div>
@@ -45,12 +49,32 @@ const HomePage = () => {
                         </li>
                         <li>
                             <div class="experience-item-title">
+                                <div class="experience-item-title-position">Teaching assistant</div>
+                                <div class="experience-item-title-separator">@</div>
+                                <div class="experience-item-title-job">UPC</div>
+                            </div>
+                            <div class="experience-item-subtitle">
+                                2020 - current
+                            </div>
+                        </li>
+                        <li>
+                            <div class="experience-item-title">
                                 <div class="experience-item-title-position">Software Engineer</div>
                                 <div class="experience-item-title-separator">@</div>
                                 <div class="experience-item-title-job">Avantica</div>
                             </div>
                             <div class="experience-item-subtitle">
                                 2012 - 2014
+                            </div>
+                        </li>
+                        <li>
+                            <div class="experience-item-title">
+                                <div class="experience-item-title-position">Intern</div>
+                                <div class="experience-item-title-separator">@</div>
+                                <div class="experience-item-title-job">Online Studio Productions</div>
+                            </div>
+                            <div class="experience-item-subtitle">
+                                2011 - 2012
                             </div>
                         </li>
                     </ul>
