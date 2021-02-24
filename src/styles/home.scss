@@ -1,3 +1,5 @@
+@use 'global';
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -12,7 +14,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline; }
   
 /* HTML5 display-role reset for older browsers */
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block; 
 }
@@ -53,19 +54,19 @@ a {
   text-decoration: none;
 }
 
-/* Custom */
+/* custom */
 
 html {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 19px;
+  font-family: global.$font-A;
+  font-weight: global.$font-weight-D;
+  font-size: global.$font-size-B;
   text-rendering: optimizeLegibility;
   line-height: 1.75;
   div {
     line-height: 1.75;
   }  
-  background-color: #fcfcfc;
-  color: #141414;
+  background-color: global.$color-background-A;
+  color: global.$color-A;
   -webkit-font-smoothing: antialiased;
   body {
     margin: 0 auto;
@@ -83,8 +84,8 @@ header {
 }
 
 .main-title {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: global.$font-size-A;
+  font-weight: global.$font-weight-A;
 }
 
 .main-image {
@@ -94,8 +95,8 @@ header {
 
 .avatar {  
   vertical-align: middle;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
@@ -114,26 +115,33 @@ header {
 }
 
 .section-list-title {
-  font-weight: 600;
+  font-weight: global.$font-weight-B;
   margin-top: 2rem;
 }
 
 .section-list-item-title {
-  font-weight: 400;
+  font-weight: global.$font-weight-C;
   div {
     display: inline-block;
   }
   .section-list-item-title-separator {
-    font-weight: 200;
+    font-weight: global.$font-weight-E;
     margin: 0 5px 0 5px;
   }
 }
 
 @media (max-width: 979px) {
   body {
-    background-color: red;
+    // background-color: red;
   }
   
+  .avatar {  
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
   .content {
     margin: 3rem 4rem 0 4rem;
   }
@@ -144,19 +152,20 @@ header {
 }
 
 @media (max-width: 767px) {
+
   html {
-    font-size: 16px;
+    font-size: global.$font-size-C;
   }
 
   body {
-    background-color: green;
+    // background-color: green;
   }
 
   header {
     margin: 0 2rem 0 2rem;
   }
 
-  .avatar {  
+  .avatar {
     vertical-align: middle;
     width: 150px;
     height: 150px;

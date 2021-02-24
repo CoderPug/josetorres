@@ -1,27 +1,30 @@
+@use 'global';
+
 nav {
   height: 80px;
   width: 100%;
+
   ul {
     float: right;
     margin-right: 20px;
+    text-align: right;
 
     li {
       display: inline-block;
       line-height: 80px;
-      margin: 0 5px;
+      margin: 0 15px;
 
       a {
-        font-size: 16px;
-        padding: 7px 13px;
+        font-size: global.$font-size-C;
+        padding: 7px;
       }
     }
   }
 }
 
 a.active, a:hover {
-  font-weight: 400;
-  color: #3380FF;
-  transition: .5s;
+  font-weight: global.$font-weight-C;
+  color: global.$color-B;
 }
 
 .checkbtn {
@@ -59,18 +62,18 @@ a.active, a:hover {
 
   nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 50px auto;
+    line-height: 40px;
+    text-align: center;
   }
 
   nav ul li a {
     color: white;
-    font-size: 20px;
+    font-size: global.$font-size-B;
   }
 
   a:hover, a.active {
-    background: none;
-    color: #0082e6;
+    color: global.$color-B;
   }
 
   #check:checked ~ ul {
