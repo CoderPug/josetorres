@@ -42,7 +42,7 @@ q {
       content: none; 
     } 
 }
-  
+
 table {
     border-collapse: collapse;
     border-spacing: 0; 
@@ -70,7 +70,7 @@ html {
   body {
     margin: 0 auto;
     max-width: 1500px;
-    height: 130vh;
+    min-height: 130vh;
   }
 }
 
@@ -126,5 +126,49 @@ header {
   .section-list-item-title-separator {
     font-weight: 200;
     margin: 0 5px 0 5px;
+  }
+}
+
+@media (max-width: 979px) {
+  body {
+    background-color: red;
+  }
+  
+  .content {
+    margin: 3rem 4rem 0 4rem;
+  }
+
+  header {
+    margin: 0 4rem 0 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    background-color: green;
+  }
+
+  header {
+    margin: 0 2rem 0 2rem;
+  }
+
+  .avatar {  
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .main-image {
+    margin: 0 auto 1.5rem;
+  }
+
+  .content {
+    text-align: center;
+    margin: 0.5rem 2rem 0 2rem;
   }
 }
