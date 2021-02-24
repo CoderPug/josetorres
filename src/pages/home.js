@@ -2,6 +2,7 @@ import * as React from "react"
 import {Link, Trans, useTranslation} from 'gatsby-plugin-react-i18next';
 
 import Navigation from "../components/navigation"
+import Footer from "../components/footer"
 
 import "../styles/home.scss"
 import AvatarImage from '../images/jose-torres-avatar.jpg'
@@ -109,10 +110,9 @@ const HomePage = () => {
                         </li>
                     </ul>
                 </div>
-
-                <hr class="section-break-5" />
             </div>
         </body>
+        <Footer />
       </html>
     )
   }
