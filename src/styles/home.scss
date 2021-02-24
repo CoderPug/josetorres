@@ -93,6 +93,16 @@ header {
   margin: 0 auto 4rem;
 }
 
+.main-social-links {
+  font-size: global.$font-size-D;
+  a:first-child {
+    padding: 0 0.5rem 0 0;
+  }
+  a:not(:first-child) {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+}
+
 .avatar {  
   vertical-align: middle;
   width: 250px;
@@ -178,6 +188,6 @@ header {
 
   .content {
     text-align: center;
-    margin: 0.5rem 2rem 0 2rem;
+    margin: 0.5rem 1.5rem 0 1.5rem;
   }
 }

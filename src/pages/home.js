@@ -26,8 +26,12 @@ const HomePage = () => {
                     <div class="main-title">
                         José Torres
                     </div>
-                    <div>
-                        Linkedin | Github | Twitter
+                    <div class="main-social-links">
+                        <a href="https://www.linkedin.com/in/coderpug/" target="_blank">Linkedin</a>
+                        |
+                        <a href="https://github.com/CoderPug" target="_blank">Github</a>
+                        |
+                        <a href="https://twitter.com/CoderPug" target="_blank">Twitter</a>
                     </div>
                     <div class="main-description">
                         Result-oriented, agile-enthusiast software engineer. I love to put a lot of effort on the small design details that will improve the usability of a product. I consider myself to be in a constant learning and I like to perform researches on new technologies during my free time.
