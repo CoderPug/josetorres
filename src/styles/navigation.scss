@@ -49,7 +49,7 @@ a.active, a:hover {
     display: block;
   }
   
-  ul {
+  nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -58,18 +58,18 @@ a.active, a:hover {
     left: -100%;
     text-align: center;
     transition: all .5s;
-  }
+    
+    li {
+      display: block;
+      margin: 50px auto;
+      line-height: 40px;
+      text-align: center;
 
-  nav ul li {
-    display: block;
-    margin: 50px auto;
-    line-height: 40px;
-    text-align: center;
-  }
-
-  nav ul li a {
-    color: white;
-    font-size: global.$font-size-B;
+      a {
+        color: white;
+        font-size: global.$font-size-B;
+      }
+    }
   }
 
   a:hover, a.active {
