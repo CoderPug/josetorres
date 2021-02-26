@@ -21,7 +21,7 @@ const HomePage = () => {
             <div class="content">
                 <div class="section-main">
                     <div class="main-image">
-                        <img src={AvatarImage} alt="Jose Torres avatar" class="avatar"/>          
+                        <img src={AvatarImage} alt="Jose Torres avatar" class="avatar"/>
                     </div>
                     <div class="main-title">
                         José Torres
@@ -34,48 +34,48 @@ const HomePage = () => {
                         <a href="https://twitter.com/CoderPug" target="_blank">Twitter</a>
                     </div>
                     <div class="main-description">
-                    Ingeniero de Software con más de 10 años de experiencia, especializado en el desarrollo de aplicaciones móviles nativas en iOS. 
-                    Experiencia en proyectos con metodologías ágiles y trabajo orientado a resultados. 
-                    Experiencia liderando equipos y desarrollo integral de proyectos de software para clientes internacionales. Desarrollo de mentoring, asesorías y talleres de programación.
-                    Cuidadoso en la calidad y los detalles. Apasionado por la investigación de nuevas tecnologías y el aprendizaje continuo.
+                    Software Engineer with more than 10 years of experience, currently focused in the development of native mobile apps in iOS.
+                    Vast experience in working using agile frameworks. End to end development. Experience in leading teams. I care about quality of code
+                    and UI polishing details. Passionate in self learning.
                     <br/>
                     <br/>
-                    Amo los animales y me encantan los pugs. Cuando no estoy trabajando estoy jugando con <a href="https://www.instagram.com/hugo.el.pugo/" target="_blank">@Hugo.el.pugo</a> 🐶.
+                    When I'm not coding I'm taking photos of <a href="https://www.instagram.com/hugo.el.pugo/" target="_blank">@Hugo.el.pugo</a> 🐶.
                     <br/>
-                    🗓 Puedes separar una reunión conmigo <a href="https://calendly.com/josetorrescardenas/reunion-general" target="_blank">aquí</a>.
+                    <br/>
+                    If you want to schedule a meeting with me please do it <a href="https://calendly.com/josetorrescardenas/reunion-general" target="_blank">here</a> 🗓.
                     </div>
                 </div>
                 <div class ="section-list">
-                    <div class="section-list-title">Experiencia</div>
+                    <div class="section-list-title">Experience</div>
                     <ul>
                         <li>
                             <div class="section-list-item-title">
-                                <div class="section-list-item-title-a">Ingeniero de Software nivel Senior / Líder Técnico</div>
-                                <div class="section-list-item-title-separator">-</div>
+                                <div class="section-list-item-title-a">Senior Software Engineer / Tech Lead</div>
+                                <div class="section-list-item-title-separator">@</div>
                                 <div class="section-list-item-b">
                                     <a href="https://santexgroup.com/" target="_blank">Santex</a>
                                 </div>
                             </div>
                             <div class="section-list-item-subtitle">
-                                2014 - Presente
+                                2014 - Present
                             </div>
                         </li>
                         <li>
                             <div class="section-list-item-title">
-                                <div class="section-list-item-title-a">Asistente de Aprendizaje a Distancia</div>
-                                <div class="section-list-item-title-separator">-</div>
+                                <div class="section-list-item-title-a">Teaching Assistant</div>
+                                <div class="section-list-item-title-separator">@</div>
                                 <div class="section-list-item-b">
                                     <a href="https://www.upc.edu.pe/" target="_blank">UPC</a>
                                 </div>
                             </div>
                             <div class="section-list-item-subtitle">
-                                2020 - Presente (Tiempo Parcial)
+                                2020 - Present (Part Time)
                             </div>
                         </li>
                         <li>
                             <div class="section-list-item-title">
-                                <div class="section-list-item-title-a">Ingeniero de Software</div>
-                                <div class="section-list-item-title-separator">-</div>
+                                <div class="section-list-item-title-a">Software Engineer</div>
+                                <div class="section-list-item-title-separator">@</div>
                                 <div class="section-list-item-b">
                                     <a href="https://www.avantica.com/es/" target="_blank">Avantica</a>
                                 </div>
@@ -86,8 +86,8 @@ const HomePage = () => {
                         </li>
                         <li>
                             <div class="section-list-item-title">
-                                <div class="section-list-item-title-a">Practicante</div>
-                                <div class="section-list-item-title-separator">-</div>
+                                <div class="section-list-item-title-a">Intern</div>
+                                <div class="section-list-item-title-separator">@</div>
                                 <div class="section-list-item-b">
                                     <a href="http://www.onlinestudioproductions.com/" target="_blank">Online Studio Productions</a>
                                 </div>
@@ -98,13 +98,12 @@ const HomePage = () => {
                         </li>
                     </ul>
                 </div>
-
                 <div class="section-list">
-                    <div class="section-list-title">Educación</div>
+                    <div class="section-list-title">Education</div>
                     <ul>
                         <li>
                             <div class="section-list-item-title">
-                                <div class="section-list-item-title-a">Maestría en Dirección de Sistemas y Tecnologías de la Información</div>
+                                <div class="section-list-item-title-a">M.Sc. Masters in Systems and Information Technology Management</div>
                                 <div class="section-list-item-title-separator">|</div>
                                 <div>2020 - 2021</div>
                             </div>
@@ -114,7 +113,7 @@ const HomePage = () => {
                         </li>
                         <li>
                             <div class="section-list-item-title">
-                                <div class="section-list-item-title-a">Título en Ingeniería de Software</div>
+                                <div class="section-list-item-title-a">B.SE. Bachelor in Software Engineering</div>
                                 <div class="section-list-item-title-separator">|</div>
                                 <div>2008 - 2013</div>
                             </div>

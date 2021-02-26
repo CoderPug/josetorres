@@ -6,7 +6,8 @@ const Footer = () => {
     return (
         <footer>
             <hr class="section-break-5"/>
-            <p>© 2021 – All rights reserved</p>
+            {/* <p>© 2021 – All rights reserved</p> */}
+            <p>© 2021 – Todos los derechos reservados</p>
             <br/>
             <div class="with-love" title="CoderPug">
                 <span>
