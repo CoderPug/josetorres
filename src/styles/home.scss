@@ -119,7 +119,7 @@ html {
   body {
     margin: 0 auto;
     max-width: 1500px;
-    min-height: 130vh;
+    min-height: 110vh;
   }
 }
 
@@ -132,7 +132,8 @@ header {
 }
 
 .main-title {
-  font-size: global.$font-size-A;
+  // font-size: global.$font-size-A;
+  font-size: 38px;
   font-weight: global.$font-weight-A;
 }
 
@@ -200,6 +201,10 @@ header {
   font-size: global.$font-size-D;
 }
 
+.section-message {
+  text-align: center;
+}
+
 @media (max-width: 979px) {
   body {
     // background-color: red;
@@ -233,6 +238,10 @@ header {
 
   header {
     margin: 0 2rem 0 2rem;
+  }
+
+  .main-title {
+    font-size: global.$font-size-A;
   }
 
   .avatar {
