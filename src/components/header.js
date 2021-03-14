@@ -78,10 +78,11 @@ const Header = (props) => {
           justify={["center", "space-between", "flex-end", "flex-end"]}
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
+          fontSize="sm"
         >
-          <MenuItems to="/">Home/</MenuItems>
-          <MenuItems to="/">Resume/</MenuItems>
-          <MenuItems to="/">Proyectos/</MenuItems>
+          <MenuItems to="/">Home</MenuItems>
+          <MenuItems to="/">Resume</MenuItems>
+          <MenuItems to="/">Proyectos</MenuItems>
           <MenuItems to="/">Blog</MenuItems>
         </Flex>
       </Box>
