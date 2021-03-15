@@ -1,39 +1,10 @@
-@use 'global';
-
-.section-break-5 {
-    background-color: transparent;
-    border: 0;
-    border-top: 1px solid rgb(220, 220, 220);
-    display: block;
-    height: 0;
-    margin: 1rem auto 3rem;
-    text-align: center;
-    width: 30%;
-}
-  
-footer {
-    height: 250px;
-    text-align: center;
-    opacity: 0.723;
-    p {
-        font-family: global.$font-C;
-        font-size: global.$font-size-E;
-    }
-}
-  
-.heart {
-    fill: red;
+ .heart {
     position: relative;
     width: 12px;
     animation: pulse 1s ease infinite;
     margin: 0 0.3rem 0 0.3rem;
 }
-  
-.with-love {
-    font-family: global.$font-C;
-    font-size: global.$font-size-E;
-}
-  
+ 
 .mini-coderpug {
     margin-left: 0.3rem;
 }
