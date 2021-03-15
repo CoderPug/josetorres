@@ -1,7 +1,6 @@
 import * as React from "react"
 
-import { Link } from 'gatsby-plugin-react-i18next';
-import { Box, Flex, Text, Button, Grid, Stack, Center, ButtonGroup, IconButton  } from "@chakra-ui/react"
+import { Box, Flex, Text, Stack, Center, Tooltip } from "@chakra-ui/react"
 
 import "../styles/footer.scss"
 
@@ -40,16 +39,19 @@ const Footer = () => {
             >
                 <Stack
                     direction={{ base: 'column', md: 'row' }}
-                    // backgroundColor="red"
                     spacing={{ base: '2', md: '8' }}
                     textAlign={{ base: 'center', md: 'start' }}
                 >
                     <Text>&copy; {new Date().getFullYear()} - Derechos reservados</Text>
                 </Stack>
             </Flex>
-            <Center margin="4">
+            
+            <Tooltip label="CoderPug" aria-label="A tooltip">
+                <Center margin="4">
                 con <HeartIcon /> por <PugIcon />
-            </Center>
+                </Center>
+            </Tooltip>
+            
         </Box>
     )
 }

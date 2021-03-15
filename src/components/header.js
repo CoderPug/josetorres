@@ -1,7 +1,6 @@
 import React from "react"
-// import { Link } from "react-router-dom"
 import { Link } from 'gatsby-plugin-react-i18next';
-import { Box, Flex, Text, Button, Stack } from "@chakra-ui/react"
+import { Box, Flex, Text } from "@chakra-ui/react"
 
 import Logo from "./UI/Logo"
 
@@ -9,7 +8,7 @@ const CloseIcon = () => (
   <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
     <title>Close</title>
     <path
-      fill="white"
+      fill="black"
       d="M9.00023 7.58599L13.9502 2.63599L15.3642 4.04999L10.4142 8.99999L15.3642 13.95L13.9502 15.364L9.00023 10.414L4.05023 15.364L2.63623 13.95L7.58623 8.99999L2.63623 4.04999L4.05023 2.63599L9.00023 7.58599Z"
     />
   </svg>
@@ -20,7 +19,7 @@ const MenuIcon = () => (
     width="24px"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
-    fill="white"
+    fill="black"
   >
     <title>Menu</title>
     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -32,7 +31,7 @@ const MenuItems = (props) => {
   return (
     <Text
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
-      mr={{ base: 0, sm: isLast ? 0 : 0 }}
+      ml={{ base: 0, sm: isLast ? 0 : 4 }}
       display="block"
       {...rest}
     >
@@ -51,9 +50,10 @@ const Header = (props) => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      maxW="714"
+      w={{base: "200px", md: "714px"}}
+      maxWidth="714px"
+      mt={8}
       mb={8}
-      // p={8}
       bg={["primary.500", "primary.500", "transparent", "transparent"]}
       color={["primary.700", "primary.700", "primary.700", "primary.700"]}
       {...props}
@@ -61,7 +61,7 @@ const Header = (props) => {
       <Flex align="center">
         <Logo
           w="150px"
-          color={["primary.500", "primary.500", "primary.500", "primary.500"]}
+          color="primary.500"
         />
       </Flex>
 
@@ -74,16 +74,16 @@ const Header = (props) => {
         flexBasis={{ base: "100%", md: "auto" }}
       >
         <Flex
-          align={["center", "center", "center", "center"]}
+          align="center"
           justify={["center", "space-between", "flex-end", "flex-end"]}
           direction={["column", "row", "row", "row"]}
           pt={[4, 4, 0, 0]}
           fontSize="sm"
         >
           <MenuItems to="/">Home</MenuItems>
-          <MenuItems to="/">Resume</MenuItems>
-          <MenuItems to="/">Proyectos</MenuItems>
-          <MenuItems to="/">Blog</MenuItems>
+          <MenuItems to="/resume">Resume</MenuItems>
+          {/* <MenuItems to="/">Proyectos</MenuItems>
+          <MenuItems to="/">Blog</MenuItems> */}
         </Flex>
       </Box>
     </Flex>

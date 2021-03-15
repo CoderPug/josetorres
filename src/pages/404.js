@@ -1,54 +1,44 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import { SimpleGrid, Text, Box, GridItem  } from "@chakra-ui/react"
+import MainLayout from "./mainLayout"
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+const HomePage = () => {
+    return (
+        <MainLayout children={
 
-// markup
-const NotFoundPage = () => {
-  return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+            <SimpleGrid columns="8" spacing="5" minW="250px" maxW="960px" alignItems="center" mx="auto">
+                <GridItem 
+                    colStart={2} 
+                    colEnd={8}
+                    h="350"
+                    position="relative" 
+                    textAlign="center"
+                >
+                    <Box position="absolute" bottom="0">
+                        <Text
+                            color="primary.100"
+                            fontSize="3xl"
+                            fontWeight="extrabold"
+                            lineHeight="shorter"
+                            >
+                            404!
+                        </Text>
+                        <Box 
+                            lineHeight="short"
+                            fontWeight="regular"
+                            fontSize="sm"
+                            marginTop="2"
+                        >
+                            Coche aún no implementó esta página.
+                            </Box>
+                    </Box>
+                </GridItem>
 
-export default NotFoundPage
+            </SimpleGrid>
+
+        }/>
+    )
+  }
+  
+  export default HomePage;
