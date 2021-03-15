@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from 'gatsby-plugin-react-i18next';
 import { Box, Flex, Text } from "@chakra-ui/react"
 
-import Logo from "./UI/Logo"
+import Logo from "../components/UI/logo"
 
 const CloseIcon = () => (
   <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
