@@ -1,7 +1,9 @@
 import * as React from "react"
 
-import { SimpleGrid, Box, GridItem  } from "@chakra-ui/react"
+import { SimpleGrid, Box, HStack, GridItem, ListItem, UnorderedList } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
+
+import resumeData from  "../content/resume.yaml"
 
 const ResumePage = () => {
     return (
@@ -12,72 +14,139 @@ const ResumePage = () => {
                 <GridItem 
                     colStart={2}
                     colEnd={8}
-                    mt={{base: "20px", md:"140px"}}
-                >
-                    <Box lineHeight="short" marginTop="12" fontSize="sm">
-                        Ingeniero de Software con más de 10 años de experiencia, especializado en el desarrollo de aplicaciones móviles nativas en iOS. Experiencia en proyectos con metodologías ágiles y trabajo orientado a resultados. Experiencia liderando equipos y desarrollo integral de proyectos de software para clientes internacionales. Desarrollo de mentoring, asesorías y talleres de programación. Cuidadoso en la calidad y los detalles. Apasionado por la investigación de nuevas tecnologías y el aprendizaje continuo.
+                    mt={{base: "20px", md:"140px"}}>
+
+                    <Box lineHeight="short" fontSize="sm" marginTop="12">
+                        { resumeData.summary }
                     </Box>
 
-                    <Box fontWeight="bold" fontSize="lg" marginTop="7">
-                        Experiencia
+                    {/* Experience Section */}
+
+                    <Box fontWeight="bold" fontSize="xl" marginTop="7">
+                        { resumeData.experience.title }
                     </Box>
-                    <Box marginTop="3">
-                        <Box fontSize="sm">
-                            Ingeniero de Software nivel Senior / Líder Técnico - <a href="https://santexgroup.com/" target="_blank">Santex</a>
-                        </Box>
-                        <Box fontSize="xs" color="#888888">
-                            2014 - Presente
-                        </Box>
+                    {
+                        resumeData.experience.content.map((data, index) => {
+                            return (
+                                <Box marginTop={ index > 0 ? "7" : "3"}>
+                                    <HStack>
+                                        <Box fontWeight="bold" fontSize="lg">{ data.title ?? "" }</Box>
+                                        {
+                                            data.current ? 
+                                                <Box fontWeight="bold" fontSize="sm" color="#12CAD6">{ data.subtitle ?? "" }</Box>
+                                                :
+                                                <Box fontWeight="semibold" fontSize="sm">{ data.subtitle ?? "" }</Box>
+                                        }
+                                    </HStack>
+                                    { 
+                                        data.places.map((place, index) => {
+                                            return (
+                                                <Box marginTop="2">
+                                                    <HStack>
+                                                        <Box fontWeight="bold" fontSize="sm">{ place.name ?? "" }</Box>
+                                                        <Box fontSize="xs" color="#888888" paddingTop="0.5">
+                                                            <a href={ place.url } target="_blank">{ place.url ?? "" }</a>
+                                                        </Box>
+                                                    </HStack>
+                                                    <Box fontStyle="italic" fontSize="sm" color="#888888">{ place.description ?? "" }</Box>
+                                                    <Box fontSize="sm">
+                                                        <UnorderedList>
+                                                            {
+                                                                place.details?.map((item, index) => {
+                                                                    return (
+                                                                        <ListItem>{ item }</ListItem>       
+                                                                    )
+                                                                })                                                        
+                                                            }
+                                                         </UnorderedList>
+                                                    </Box>
+                                                    <Box marginLeft="3">
+                                                        {
+                                                            place.projects?.map((project, index) => {
+                                                                return (
+                                                                    <Box>
+                                                                        <Box fontWeight="bold" fontSize="sm" marginTop="1" color={ project.current ? "#12CAD6" : "black"}>
+                                                                        &#8250; { project.title }
+                                                                        </Box>
+                                                                        <Box marginLeft="2.5">
+                                                                            {
+                                                                                project.description?.map((item, index) => {
+                                                                                    return (<Box fontSize="sm">{ item }</Box>)
+                                                                                })
+                                                                            }
+                                                                        </Box>
+                                                                    </Box>
+                                                                )
+                                                            })
+                                                        }
+                                                    </Box>
+                                                </Box>
+                                            )
+                                        })
+                                    }
+                                </Box>
+                            )
+                        })
+                    }
+
+                    {/* Education section */}
+
+                    <Box fontWeight="bold" fontSize="xl" marginTop="7">
+                        { resumeData.education.title }
                     </Box>
-                    <Box marginTop="2">
-                        <Box fontSize="sm">
-                            Asistente de Aprendizaje a Distancia - <a href="https://www.upc.edu.pe/" target="_blank">UPC</a>
-                        </Box>
-                        <Box fontSize="xs" color="#888888">
-                            2020 - Presente (Tiempo Parcial)
-                        </Box>
-                    </Box>
-                    <Box marginTop="2">
-                        <Box fontSize="sm">
-                            Ingeniero de Software - <a href="https://www.avantica.com/es/" target="_blank">Avantica</a>
-                        </Box>
-                        <Box fontSize="xs" color="#888888">
-                            2013 - 2014
-                        </Box>
-                    </Box>
-                    <Box marginTop="2">
-                        <Box fontSize="sm">
-                            Practicante - <a href="http://www.onlinestudioproductions.com/" target="_blank">Online Studio Productions</a>
-                        </Box>
-                        <Box fontSize="xs" color="#888888">
-                            2011 - 2013
-                        </Box>
-                    </Box>
+                    <UnorderedList marginTop="3" fontSize="sm">
+                    {
+                        resumeData.education.content.map((data, index) => {
+                            return (
+                                <ListItem>
+                                    <Box>{ data.title }</Box>
+                                    <Box fontSize="xs" fontStyle="italic" color="#888888">{ data.subtitle }</Box>
+                                </ListItem>
+                            )
+                        })
+                    }
+                    </UnorderedList>
                     
-                    <Box fontWeight="bold" fontSize="lg" marginTop="7">
-                        Educación
+                    {/* Publications */}
+
+                    <Box fontWeight="bold" fontSize="xl" marginTop="7">
+                        { resumeData.publications.title }
                     </Box>
-                    <Box marginTop="3">
-                        <Box fontSize="sm">
-                            Maestría en Dirección de Sistemas y Tecnologías de la Información | 2020 - 2021
-                        </Box>
-                        <Box fontSize="xs" color="#888888">
-                            Universidad Peruana de Ciencias Aplicadas
-                        </Box>
+                    <UnorderedList marginTop="3" fontSize="sm">
+                    {
+                        resumeData.publications.content.map((publication, index) => {
+                            return (
+                                <ListItem>
+                                    <Box>{ publication }</Box>
+                                </ListItem>
+                            )
+                        })
+                    }
+                    </UnorderedList>
+
+                    {/* Conferences */}
+
+                    <Box fontWeight="bold" fontSize="xl" marginTop="7">
+                        { resumeData.conferences.title }
                     </Box>
-                    <Box marginTop="2" mb="80px">
-                        <Box fontSize="sm">
-                            Título en Ingeniería de Software | 2008 - 2013
-                        </Box>
-                        <Box fontSize="xs" color="#888888">
-                            Universidad Peruana de Ciencias Aplicadas
-                        </Box>
-                    </Box>
-                    
+                    <UnorderedList fontSize="sm" marginTop="3" marginBottom="10rem">
+                    {
+                        resumeData.conferences.content.map((conference, index) => {
+                            return (
+                                <ListItem>
+                                    <HStack>
+                                        <Box>{ conference.title }</Box>
+                                        <Box color="#888888">{ conference.subtitle }</Box>
+                                    </HStack>
+                                    <Box fontSize="xs" fontStyle="italic" color="#888888">{ conference.url }</Box>
+                                </ListItem>
+                            )
+                        })
+                    }
+                    </UnorderedList>
+
                 </GridItem>
-
             </SimpleGrid>
-
         }/>
     )
   }
