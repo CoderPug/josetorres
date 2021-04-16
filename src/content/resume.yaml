@@ -1,0 +1,125 @@
+summary:
+    "An innovative Software Engineer who specializes in developing native iOS applications for both iPhone and iPad. 
+    Flexible, agile-enthusiast and certified Scrum Master. Skilled in creating applications that actually adds value 
+    to the business, not just meeting requirements. Experienced team leader who is versatile and adapts easily to 
+    distributed teams of all sizes and backgrounds. Enjoys mentoring colleagues and fellow developers. Continuous learner."
+experience:
+    title: Experience
+    content:
+        - title: Senior Software Engineer / Team Leader
+          subtitle: ( 2014 - present )
+          current: true
+          places:
+            - name: Santex Group
+              url: http://santexgroup.com/
+              description: Santex is a US-based software development company.
+              details:  
+                - Requirement gathering and analysis 
+                - Assistance during elaboration of client proposals
+                - Design of project architecture
+                - Implementation of CI environment
+                - Planning of sprint backlogs
+                - Development and testing of user stories
+                - Presentation and distribution of evolutive work
+                - Deployment of final product
+                - Elaboration of proof of concepts
+              projects:
+                - title: "Project: D3 Banking ( present ) - Minneapolis, MN"
+                  current: true
+                  description:
+                      - "Part of the iOS team working in the core banking project. Native white label iOS application for iPhone/iPad/apple watch that integrates multiple core banking features as: authentication, MFA, biometrics, feature tour, accounts, transfers, deposits, eDocs. Also web-based features integrated as web components. Support of custom localization strings and themes configuration, allowing custom deployment for multiple affiliate in different banks clients. Architectural drivers: flexibility, modularity."
+                      - Develops, integrates new features and updates documentation
+                      - Participate in the definition of coming features for the application
+                      - Discuss technical approach of each task for the cycle of work
+                      - Performs review of code of the team members to ensure code quality and best practices
+                      - "Team Size: 5 iOS Developer, 5 Android Developer, 2 Platform/Integration Developer, 4 UI Developers, 2 QA Analyst, 2 Product Owner"
+                      - "Technologies: iOS, Swift, Custom integration server: Jarvis, Bitrise, NewRelic, TestFlight, Firebase"
+                - title: "Project: Breeze CareCloud - Miami, FL"
+                - title: "Project: Ilumno - Miami, FL"
+                - title: "Project: MCCA MoCCA Service Order Delivery ( SOD ) - Boston, MA"
+                - title: "Project: MoCCA Upgrade - Boston, MA"
+        - title: Instructor / Teaching Assistant
+          subtitle: ( 2020 - present )
+          current: true
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: http://upc.edu.pe/
+              description: UPC is one of the most important universities in Peru
+              details:
+                - Provides support to the teacher in charge of a classroom
+                - Reinforces the lessons by tutoring students
+                - Oversees lesson preparations
+                - Performs virtual coding sessions for programming courses
+                - "Programming languages: java, ruby"
+              projects:
+                - title: "Course: Fundamentals of Programming"
+                - title: "Course: Data Structures and Algorithms"
+                - title: "Course: Object-Oriented Programming"
+        - title: iOS Developer
+          subtitle: ( 2012 - 2014 )
+          places:
+            - name: Freelance
+              url:
+              description:
+              details:
+                - Consulting services for native mobile developments
+                - Project planning, time validations and code review during development
+                - Publish iOS products and management of Apple store/account
+              projects:
+                - title: "Project: UPC Movil - Lima, Peru"
+                - title: "Project: ACoRN - Ottawa, Canada"
+            - name: Avantica Technologies
+              url: http://www.avantica.net/
+              description: Avantica is a software development company based in Costa Rica.
+              details:
+                - Requirement analysis 
+                - Development and testing of user stories
+                - Presentation and distribution of evolutive work
+                - Deployment of final product
+              projects:
+                - title: "Project: Haiku Learning Management System - Goshen, IN"
+                - title: "Project: Interbank Banca Movil Update & Refactoring - Lima, Peru"
+                - title: "Project: CICA Life Premium Calculator - Austin, TX"
+        - title: Intern
+          subtitle: ( 2011 - 2012 )
+          places:
+            - name: Online Studio Productions
+              url: http://www.onlinestudioproductions.com/
+              description: Online Studio Productions is a mobile application factory in Peru.
+              details:
+                - Development of user stories / project features
+                - Presentation and distribution of evolutive work
+                - Deployment of final product
+              projects:
+                - title: "Project: Dislexia App - Lima, Peru"
+                - title: "Project: Interactive Tale ( Los Tres Mosqueteros, Robin Hood, Tarzan, El Principito ) - Lima, Peru"
+                - title: "Project: Ediciones Infantiles - Lima, Peru"
+                - title: "Project: 365 Things to do as a Couple - Lima, Peru"
+education:
+    title: "Education"
+    content:
+        - title: Master’s in Information Systems and Technology Management ( 2020 - 2021 )
+          subtitle: Universidad Peruana de Ciencias Aplicadas
+        - title: Software Engineering ( 2008 - 2014 ) ( Equivalent to a 5-year degree in Computer Engineering ) 
+          subtitle: Universidad Peruana de Ciencias Aplicadas
+        - title: Scrum Master Certification ( 2014 )
+          subtitle: Scrum Alliance
+        - title: English as a second language study ( 2005 -2008 )
+          subtitle: Instituto Cultural Peruano Norteamericano
+publications:
+    title: "Publications"
+    content:
+        - "Software Architecture for a mobile application based on quality attributes following the 
+          principles of the Software Engineering Institute ( SEI ) - 2014"
+conferences:
+    title: "Conferences"
+    content:
+        - title: "WWDC 2017"
+          subtitle: "Attendee"
+          url: "https://developer.apple.com/wwdc/"
+        - title: "iOS Dev UK 2016"
+          subtitle: "Attendee"
+          url: "http://www.iosdevuk.com/"
+        - title: "Real Time iOS Apps with PubNub"
+          subtitle: "Speaker @ Santex Tech Meet up 2014"
+          url: "https://speakerdeck.com/coderpug/real-time-ios-apps-with-pubnub"
