@@ -117,7 +117,8 @@ const ResumePage = () => {
                         resumeData.publications.content.map((publication, index) => {
                             return (
                                 <ListItem>
-                                    <Box>{ publication }</Box>
+                                    <Box>{ publication.title }</Box>
+                                    <Box fontSize="xs" fontStyle="italic" color="#888888"><a href={ publication.url } target="_blank">{ publication.url }</a></Box>
                                 </ListItem>
                             )
                         })
@@ -138,7 +139,7 @@ const ResumePage = () => {
                                         <Box>{ conference.title }</Box>
                                         <Box color="#888888">{ conference.subtitle }</Box>
                                     </HStack>
-                                    <Box fontSize="xs" fontStyle="italic" color="#888888">{ conference.url }</Box>
+                                    <Box fontSize="xs" fontStyle="italic" color="#888888"><a href={ conference.url } target="_blank">{ conference.url }</a></Box>
                                 </ListItem>
                             )
                         })

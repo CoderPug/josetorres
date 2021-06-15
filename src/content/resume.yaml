@@ -24,8 +24,15 @@ experience:
                 - Deployment of final product
                 - Elaboration of proof of concepts
               projects:
-                - title: "Project: D3 Banking ( present ) - Minneapolis, MN"
+                - title: "Project: Haku ( present ) - Miami, FL"
                   current: true
+                  description:
+                      - Setup the base project architecture for a white label iOS application
+                      - Setup of CI/CD pipelines and scripting for automation.
+                      - Discuss technical approach of each task for the cycle of work
+                      - Develops main application features
+                      - "Technologies: iOS, Swift, Firebase Firestore Database, Firebase Storage, Firebase Functions, NewRelic"
+                - title: "Project: D3 Banking - Minneapolis, MN"
                   description:
                       - "Part of the iOS team working in the core banking project. Native white label iOS application for iPhone/iPad/apple watch that integrates multiple core banking features as: authentication, MFA, biometrics, feature tour, accounts, transfers, deposits, eDocs. Also web-based features integrated as web components. Support of custom localization strings and themes configuration, allowing custom deployment for multiple affiliate in different banks clients. Architectural drivers: flexibility, modularity."
                       - Develops, integrates new features and updates documentation
@@ -109,8 +116,9 @@ education:
 publications:
     title: "Publications"
     content:
-        - "Software Architecture for a mobile application based on quality attributes following the 
-          principles of the Software Engineering Institute ( SEI ) - 2014"
+        - title: "A Suggested Proposal to Implementation Quality Management System for Small Business - 2021"
+          url: "https://repositorioacademico.upc.edu.pe/handle/10757/656159"
+        - title: "Software Architecture for a mobile application based on quality attributes following the principles of the Software Engineering Institute ( SEI ) - 2014"
 conferences:
     title: "Conferences"
     content:
