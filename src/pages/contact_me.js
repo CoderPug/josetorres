@@ -65,7 +65,7 @@ const ContactMePage = (props) => {
                     colEnd={10}
                     textAlign="center"
                 >
-                    <Box fontWeight="extrabold" fontSize="xl">José Torres Cárdenas</Box>
+                    <Box fontWeight="bold" fontSize="xl">José Torres Cárdenas</Box>
                     <Box fontWeight="light">@coderpug</Box>
                 </GridItem>
                 <GridItem

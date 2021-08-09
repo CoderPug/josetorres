@@ -1,11 +1,7 @@
 import * as React from "react"
-import Header from "../components/header"
 import Footer from "../components/footer"
 
-import { ChakraProvider, Flex  } from "@chakra-ui/react"
-import { Global } from "@emotion/react"
-
-import { extendTheme } from "@chakra-ui/react"
+import { Global, ChakraProvider, Flex, extendTheme } from "@chakra-ui/react"
 
 import "../styles/home.scss"
 
@@ -135,7 +131,7 @@ const theme = extendTheme({
         },
     },
     fonts: {
-        html: "Poppins",
+        body: "Poppins",
     },
 })
 
@@ -153,7 +149,6 @@ const BaseLayout = (props) => {
                 maxW={{ xl: "1200px" }}
                 minH="900"
                 m="0 auto"
-                // {...props}
                 >
                 
                 {props.children}

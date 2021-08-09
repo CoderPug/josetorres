@@ -37,7 +37,7 @@ const HomePage = () => {
                         <Text
                             color="primary.100"
                             fontSize="3xl"
-                            fontWeight="extrabold"
+                            fontWeight="bold"
                             lineHeight="shorter"
                             >
                             Ingeniero de Software implementado aplicaciones de alto impacto
