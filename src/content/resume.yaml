@@ -6,12 +6,24 @@ summary:
 experience:
     title: Experience
     content:
-        - title: Senior Software Engineer / Team Leader
-          subtitle: ( 2014 - present )
+        - title: Software Engineer III
+          subtitle: ( 2021 - present )
           current: true
           places:
+            - name: Glovo
+              url: https://glovoapp.com/es
+              description: Barcelona-based startup, fastest-growing delivery player in Europe, Western Asia, and Africa. Platform with more than 3.4M monthly active users. 
+                  Currently delivering over 100M+ annual orders and operating in 23 countries and 1080+ cities.
+              details:
+              projects:
+                - title: "Team: Payments Experience - Barcelona, Spain"
+                  current: true
+        - title: Senior Software Engineer / Tech Lead
+          subtitle: ( 2014 - 2021 )
+          current: false
+          places:
             - name: Santex Group
-              url: http://santexgroup.com/
+              url: https://santexgroup.com/
               description: Santex is a US-based software development company.
               details:  
                 - Requirement gathering and analysis 
@@ -24,8 +36,7 @@ experience:
                 - Deployment of final product
                 - Elaboration of proof of concepts
               projects:
-                - title: "Project: Haku ( present ) - Miami, FL"
-                  current: true
+                - title: "Project: Haku - Miami, FL"
                   description:
                       - Setup the base project architecture for a white label iOS application
                       - Setup of CI/CD pipelines and scripting for automation.
@@ -50,7 +61,7 @@ experience:
           current: true
           places:
             - name: Universidad Peruana de Ciencias Aplicadas
-              url: http://upc.edu.pe/
+              url: https://upc.edu.pe/
               description: UPC is one of the most important universities in Peru
               details:
                 - Provides support to the teacher in charge of a classroom
@@ -76,7 +87,7 @@ experience:
                 - title: "Project: UPC Movil - Lima, Peru"
                 - title: "Project: ACoRN - Ottawa, Canada"
             - name: Avantica Technologies
-              url: http://www.avantica.net/
+              url: https://www.avantica.net/
               description: Avantica is a software development company based in Costa Rica.
               details:
                 - Requirement analysis 
@@ -91,7 +102,7 @@ experience:
           subtitle: ( 2011 - 2012 )
           places:
             - name: Online Studio Productions
-              url: http://www.onlinestudioproductions.com/
+              url: https://www.onlinestudioproductions.com/
               description: Online Studio Productions is a mobile application factory in Peru.
               details:
                 - Development of user stories / project features
@@ -107,7 +118,7 @@ education:
     content:
         - title: Master’s in Information Systems and Technology Management ( 2020 - 2021 )
           subtitle: Universidad Peruana de Ciencias Aplicadas
-        - title: Software Engineering ( 2008 - 2014 ) ( Equivalent to a 5-year degree in Computer Engineering ) 
+        - title: Software Engineering ( 2008 - 2014 ) Equivalent to a 5-year degree in Computer Engineering
           subtitle: Universidad Peruana de Ciencias Aplicadas
         - title: Scrum Master Certification ( 2014 )
           subtitle: Scrum Alliance
@@ -119,6 +130,7 @@ publications:
         - title: "A Suggested Proposal to Implementation Quality Management System for Small Business - 2021"
           url: "https://repositorioacademico.upc.edu.pe/handle/10757/656159"
         - title: "Software Architecture for a mobile application based on quality attributes following the principles of the Software Engineering Institute ( SEI ) - 2014"
+          url: "https://repositorioacademico.upc.edu.pe/handle/10757/624131"
 conferences:
     title: "Conferences"
     content:
