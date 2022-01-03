@@ -73,7 +73,8 @@ const ContactMePage = (props) => {
                     colEnd={10}
                     textAlign="center"
                 >
-                    <Box fontWeight="light">Peruvian Software Engineer at Santex</Box>
+                    <Box fontWeight="light">Software Engineer @ Glovo</Box>
+                    <Box fontWeight="light">🇵🇪🇪🇸</Box>
                 </GridItem>
                 <GridItem
                     colStart={1} 
@@ -98,7 +99,7 @@ const ContactMePage = (props) => {
                         {
                                 (new URLSearchParams(props.location.search).get("access") == "coche") ? 
                                 <HStack spacing="30px">
-                                    <button><a href="https://api.whatsapp.com/send?phone=+51957958151&text=Hi!"><Image width="45px" src={ WhatsappImage } /></a></button>
+                                    <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } /></a></button>
                                     <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank"><Image width="45px" src={ FacebookImage } /></a></button>
                                     <button><a href="https://www.instagram.com/josetorrescardenas/" target="_blank"><Image width="45px" src={ InstagramImage } /></a></button>
                                 </HStack> 
