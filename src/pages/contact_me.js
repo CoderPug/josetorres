@@ -49,12 +49,12 @@ const ContactMePage = (props) => {
                 <GridItem 
                     colStart={1} 
                     colEnd={10}
-                    mt="5"
+                    mt="10"
                 >
                     <Center>
                         <Image 
                             borderRadius="full"
-                            boxSize="150px"
+                            boxSize="200px"
                             mt="5"
                             src={ AvatarHomeImageC } 
                         />             
@@ -81,12 +81,13 @@ const ContactMePage = (props) => {
                     colEnd={10}
                     textAlign="center"
                 >
-                    <Box fontWeight="semibold" fontSize="md">Contact me:</Box>
+                    {/* <Box fontWeight="semibold" fontSize="md">Contact me:</Box> */}
                 </GridItem>
 
                 <GridItem
                     colStart={1} 
                     colEnd={10}
+                    mt="10"
                     alignContent="center"
                 >
                     <VStack spacing="20px">
