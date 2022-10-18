@@ -12,10 +12,10 @@ const ResumePage = () => {
             <SimpleGrid columns="8" spacing="5" maxW="960px" alignItems="center" mx="auto">
                 
                 <GridItem 
-                    colStart={{md:2, sm:1}}
-                    colEnd={{md:8, sm:9}}
+                    colStart={{md:2, base:1}}
+                    colEnd={{md:8, base:9}}
                     mt={{base: "20px", md:"140px"}}
-                    margin={{sm:"20px"}}>
+                    margin={{base:"20px"}}>
 
                     <Box lineHeight="short" fontSize="sm" marginTop="12">
                         { resumeData.summary }
