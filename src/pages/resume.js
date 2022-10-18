@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { SimpleGrid, Box, HStack, GridItem, ListItem, UnorderedList } from "@chakra-ui/react"
+import { SimpleGrid, Box, HStack, Stack, GridItem, ListItem, UnorderedList } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
 
 import resumeData from  "../content/resume.yaml"
@@ -12,9 +12,10 @@ const ResumePage = () => {
             <SimpleGrid columns="8" spacing="5" maxW="960px" alignItems="center" mx="auto">
                 
                 <GridItem 
-                    colStart={2}
-                    colEnd={8}
-                    mt={{base: "20px", md:"140px"}}>
+                    colStart={{md:2, sm:1}}
+                    colEnd={{md:8, sm:9}}
+                    mt={{base: "20px", md:"140px"}}
+                    margin={{sm:"20px"}}>
 
                     <Box lineHeight="short" fontSize="sm" marginTop="12">
                         { resumeData.summary }
@@ -29,7 +30,7 @@ const ResumePage = () => {
                         resumeData.experience.content.map((data, index) => {
                             return (
                                 <Box marginTop={ index > 0 ? "7" : "3"}>
-                                    <HStack>
+                                    <Stack direction={{base:['column'], md:['row']}} align={{md:'center'}}>
                                         <Box fontWeight="bold" fontSize="lg">{ data.title ?? "" }</Box>
                                         {
                                             data.current ? 
@@ -37,7 +38,7 @@ const ResumePage = () => {
                                                 :
                                                 <Box fontWeight="semibold" fontSize="sm">{ data.subtitle ?? "" }</Box>
                                         }
-                                    </HStack>
+                                    </Stack>
                                     { 
                                         data.places.map((place, index) => {
                                             return (
