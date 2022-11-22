@@ -102,7 +102,7 @@ const ContactMePage = (props) => {
                                 <HStack spacing="30px">
                                     <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } /></a></button>
                                     <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank"><Image width="45px" src={ FacebookImage } /></a></button>
-                                    <button><a href="https://www.instagram.com/josetorrescardenas/" target="_blank"><Image width="45px" src={ InstagramImage } /></a></button>
+                                    <button><a href="https://www.instagram.com/josetorrespe/" target="_blank"><Image width="45px" src={ InstagramImage } /></a></button>
                                 </HStack> 
                                 : <></>
                         }
