@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { SimpleGrid, HStack, GridItem, Image, Center, Box, Button, VStack, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, useDisclosure } from "@chakra-ui/react"
+import { SimpleGrid, HStack, GridItem, Image, Center, Box, Button, VStack, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton, useDisclosure } from "@chakra-ui/react"
 
 import BaseLayout from "./baseLayout"
 import PugIcon from "../components/UI/pugIcon"
@@ -31,7 +31,7 @@ const DisplayQRCode = (props) => {
             </ModalBody>
             <Center paddingBottom="8">
                 <VStack>
-                    <Image width="70%" src={ (props.personal == true) ? QRCodeImageB : QRCodeImageA }></Image>
+                    <Image width="70%" src={ (props.personal === true) ? QRCodeImageB : QRCodeImageA }></Image>
                     <PugIcon/>
                 </VStack>
             </Center>
@@ -92,17 +92,17 @@ const ContactMePage = (props) => {
                 >
                     <VStack spacing="20px">
                         <HStack spacing="30px">
-                            <button><a href="mailto:torres.cardenas.jose@me.com"><Image width="45px" src={ EmailImage } /></a></button>
-                            <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank"><Image width="45px" src={ LinkedinImage } /></a></button>
-                            <button><a href="https://www.twitter.com/coderpug" target="_blank"><Image width="45px" src={ TwitterImage } /></a></button>
-                            <button><a href="https://github.com/CoderPug" target="_blank"><Image width="45px" src={ GithubImage } /></a></button>
+                            <button><a href="mailto:torres.cardenas.jose@me.com"><Image width="45px" src={ EmailImage } /> </a></button>
+                            <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer"><Image width="45px" src={ LinkedinImage } /> </a></button>
+                            <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer"><Image width="45px" src={ TwitterImage } /> </a></button>
+                            <button><a href="https://github.com/CoderPug" target="_blank" rel="noreferrer"><Image width="45px" src={ GithubImage } /> </a></button>
                         </HStack>
                         {
-                                (new URLSearchParams(props.location.search).get("access") == "coche") ? 
+                                (new URLSearchParams(props.location.search).get("access") === "coche") ? 
                                 <HStack spacing="30px">
-                                    <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } /></a></button>
-                                    <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank"><Image width="45px" src={ FacebookImage } /></a></button>
-                                    <button><a href="https://www.instagram.com/josetorrespe/" target="_blank"><Image width="45px" src={ InstagramImage } /></a></button>
+                                    <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } />.</a></button>
+                                    <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank" rel="noreferrer"><Image width="45px" src={ FacebookImage } /> </a></button>
+                                    <button><a href="https://www.instagram.com/josetorrespe/" target="_blank" rel="noreferrer"><Image width="45px" src={ InstagramImage } /> </a></button>
                                 </HStack> 
                                 : <></>
                         }
@@ -117,8 +117,8 @@ const ContactMePage = (props) => {
                     <Center>
                         <VStack>
                             {
-                                (new URLSearchParams(props.location.search).get("mode") == "coche") ? 
-                                    <DisplayQRCode personal={ (new URLSearchParams(props.location.search).get("access") == "coche") } />
+                                (new URLSearchParams(props.location.search).get("mode") === "coche") ? 
+                                    <DisplayQRCode personal={ (new URLSearchParams(props.location.search).get("access") === "coche") } />
                                     : <></>
                             }
                             <Button variant="outline">
