@@ -1,11 +1,19 @@
 import * as React from "react"
+import { useState } from 'react'
 
-import { SimpleGrid, Box, HStack, Stack, GridItem, ListItem, UnorderedList } from "@chakra-ui/react"
+import { SimpleGrid, Box, HStack, Stack, GridItem, ListItem, UnorderedList, Button } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
 
 import resumeData from  "../content/resume.yaml"
 
 const ResumePage = () => {
+
+    const [isExperienceExpanded, setIsExperienceExpanded] = useState(false)
+
+    const updateContent = () => {
+        setIsExperienceExpanded(!isExperienceExpanded)
+    }
+
     return (
         <MainLayout children={
 
@@ -25,13 +33,16 @@ const ResumePage = () => {
 
                     <Box fontWeight="bold" fontSize="xl" marginTop="7">
                         { resumeData.experience.title }
+                        <Button color="#12CAD6" variant='link' onClick={ updateContent }>
+                            +
+                        </Button>
                     </Box>
                     {
                         resumeData.experience.content.map((data, index) => {
                             return (
-                                <Box marginTop={ index > 0 ? "7" : "3"}>
+                                <Box marginTop={ index > 0 ? isExperienceExpanded ? "7" : "3" : "3"}>
                                     <Stack direction={{base:['column'], md:['row']}} align={{md:'center'}}>
-                                        <Box fontWeight="bold" fontSize="lg">{ data.title ?? "" }</Box>
+                                        <Box fontWeight="bold" fontSize={ isExperienceExpanded ? "lg" : "g" }>{ data.title ?? "" }</Box>
                                         {
                                             data.current ? 
                                                 <Box fontWeight="bold" fontSize="sm" color="#12CAD6">{ data.subtitle ?? "" }</Box>
@@ -44,7 +55,7 @@ const ResumePage = () => {
                                             return (
                                                 <Box marginTop="2">
                                                     <HStack>
-                                                        <Box fontWeight="bold" fontSize="sm">{ place.name ?? "" }</Box>
+                                                        <Box fontWeight={ isExperienceExpanded ? "bold" : "regular" } fontSize="sm">{ place.name ?? "" }</Box>
                                                         <Box fontSize="xs" color="#888888" paddingTop="0.5">
                                                             <a href={ place.url } target="_blank">{ place.url ?? "" }</a>
                                                         </Box>
@@ -53,16 +64,18 @@ const ResumePage = () => {
                                                     <Box fontSize="sm">
                                                         <UnorderedList>
                                                             {
+                                                                isExperienceExpanded ?
                                                                 place.details?.map((item, index) => {
                                                                     return (
                                                                         <ListItem>{ item }</ListItem>       
                                                                     )
-                                                                })                                                        
+                                                                }) : null
                                                             }
                                                          </UnorderedList>
                                                     </Box>
                                                     <Box marginLeft="3">
                                                         {
+                                                            isExperienceExpanded ?
                                                             place.projects?.map((project, index) => {
                                                                 return (
                                                                     <Box>
@@ -78,7 +91,7 @@ const ResumePage = () => {
                                                                         </Box>
                                                                     </Box>
                                                                 )
-                                                            })
+                                                            }) : null
                                                         }
                                                     </Box>
                                                 </Box>

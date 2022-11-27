@@ -18,6 +18,23 @@ experience:
               projects:
                 - title: "Team: Payments Experience - Barcelona, Spain"
                   current: true
+        - title: Part-Time Teacher / Instructor
+          subtitle: ( 2020 - present )
+          current: true
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: https://upc.edu.pe/
+              description: UPC is one of the most important universities in Peru
+              details:
+                - Provides support to the teacher in charge of a classroom
+                - Reinforces the lessons by tutoring students
+                - Oversees lesson preparations
+                - Performs virtual coding sessions for programming courses
+                - "Programming languages: java, ruby"
+              projects:
+                - title: "Course: Fundamentals of Programming"
+                - title: "Course: Data Structures and Algorithms"
+                - title: "Course: Object-Oriented Programming"
         - title: Senior Software Engineer / Tech Lead
           subtitle: ( 2014 - 2021 )
           current: false
@@ -56,24 +73,7 @@ experience:
                 - title: "Project: Ilumno - Miami, FL"
                 - title: "Project: MCCA MoCCA Service Order Delivery ( SOD ) - Boston, MA"
                 - title: "Project: MoCCA Upgrade - Boston, MA"
-        - title: Instructor / Teaching Assistant
-          subtitle: ( 2020 - present )
-          current: true
-          places:
-            - name: Universidad Peruana de Ciencias Aplicadas
-              url: https://upc.edu.pe/
-              description: UPC is one of the most important universities in Peru
-              details:
-                - Provides support to the teacher in charge of a classroom
-                - Reinforces the lessons by tutoring students
-                - Oversees lesson preparations
-                - Performs virtual coding sessions for programming courses
-                - "Programming languages: java, ruby"
-              projects:
-                - title: "Course: Fundamentals of Programming"
-                - title: "Course: Data Structures and Algorithms"
-                - title: "Course: Object-Oriented Programming"
-        - title: iOS Developer
+        - title: Software Engineer iOS
           subtitle: ( 2012 - 2014 )
           places:
             - name: Freelance
