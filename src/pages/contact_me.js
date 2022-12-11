@@ -44,7 +44,7 @@ const DisplayQRCode = (props) => {
 
 const ContactMePage = (props) => {
     return (
-        <BaseLayout children={
+        <BaseLayout showSocialMediaLinks={false} children={
             <SimpleGrid columns="8" spacing="5" alignItems="center" mx="auto">
                 <GridItem 
                     colStart={1} 

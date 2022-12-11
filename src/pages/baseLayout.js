@@ -154,7 +154,7 @@ const BaseLayout = (props) => {
                 {props.children}
 
             </Flex>
-            <Footer />
+            <Footer showSocialMediaLinks={props.showSocialMediaLinks ?? true} />
         </ChakraProvider>
     )
   }

@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { Box, Flex, Text, Stack, Center, Tooltip } from "@chakra-ui/react"
+import { Box, Flex, Text, Stack, Center, Tooltip, Link } from "@chakra-ui/react"
 
 import "../styles/footer.scss"
 
@@ -13,7 +13,7 @@ const HeartIcon = () => (
     </svg>
 );
 
-const Footer = () => {
+const Footer = (props) => {
     return (
         <Box 
             as="footer"
@@ -32,8 +32,19 @@ const Footer = () => {
                     direction={{ base: 'column', md: 'row' }}
                     spacing={{ base: '2', md: '8' }}
                     textAlign={{ base: 'center', md: 'start' }}
+                    w="full"
                 >
                     <Text>&copy; {new Date().getFullYear()} - Derechos reservados</Text>
+                    <Box flexGrow="1"/>
+                    { props.showSocialMediaLinks ? 
+                        <div>
+                            <Link href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer">Twitter</Link> /&nbsp;
+                            <Link href="https://github.com/CoderPug" target="_blank" rel="noreferrer">Github</Link> /&nbsp;
+                            <Link href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer">Linkedin</Link>
+                        </div>
+                        :
+                        null
+                    }
                 </Stack>
             </Flex>
             
