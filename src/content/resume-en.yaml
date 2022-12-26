@@ -26,6 +26,7 @@ experience:
               url: https://upc.edu.pe/
               description: UPC is one of the most important universities in Peru
               details:
+                - Teaches courses in the program for people that work (EPE)
                 - Provides support to the teacher in charge of a classroom
                 - Reinforces the lessons by tutoring students
                 - Oversees lesson preparations
@@ -35,6 +36,7 @@ experience:
                 - title: "Course: Fundamentals of Programming"
                 - title: "Course: Data Structures and Algorithms"
                 - title: "Course: Object-Oriented Programming"
+                - title: "Course: User Experience (UX)"
         - title: Senior Software Engineer / Tech Lead
           subtitle: ( 2014 - 2021 )
           current: false

@@ -1,0 +1,145 @@
+summary:
+    "Ingeniero de software especializado en el desarrollo de aplicaciones móviles nativas para la plataforma de
+    iOS ( iPhone/iPad/apple watch ). Flexible y versátil, entusiasta de las metodologías ágiles y Scrum Master
+    certificado. Enfocado en los detalles y en el impacto de los productos de software en los objetivos
+    organizacionales del cliente. Líder técnico con experiencia a cargo de equipos de ingenieros para llevar a
+    cabo proyectos con diferentes tipos de arquitectura y migraciones. Disfruta de realizar mentoring y de la
+    enseñanza. Apasionado por la investigación continua de nuevas tecnologías."
+experience:
+    title: Experiencia
+    content:
+        - title: Ingeniero de Software - Nivel Senior IV
+          subtitle: ( 2021 - present )
+          current: true
+          places:
+            - name: Glovo
+              url: https://glovoapp.com/es
+              description: Startup fundada en Barcelona, con el mejor crecimiento en Europa, Asia Occidental y África. Plataforma con más de 3.4M de usuarios activos mensuales. 
+                  Actualmente con más de 100M+ de órdenes anuales y operando en 23 países y más de 1080+ ciudades.
+              details:
+              projects:
+                - title: "Equipo: Experiencia de Pagos (PX) - Barcelona, España"
+                  current: true
+        - title: Profesor Tiempo Parcial
+          subtitle: ( 2020 - present )
+          current: true
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: https://upc.edu.pe/
+              description: UPC es una de las universidades más prestigiosas del Perú
+              details:
+                - Enseñanza de cursos dentro del programa para profesionales que trabajan (EPE)
+                - "Lenguajes de programación: java, ruby"
+              projects:
+                - title: "Curso: Fundamentos de la Programación"
+                - title: "Curso: Estructura de Datos y Algoritmos"
+                - title: "Curso: Programación Orientada a Objetos"
+                - title: "Curso: Experiencia de Usuario (UX)"
+        - title: Ingeniero de Software - Nivel Senior / Líder Técnico
+          subtitle: ( 2014 - 2021 )
+          current: false
+          places:
+            - name: Santex
+              url: https://santexgroup.com/
+              description: Santex es una consultora de software con oficinas en Argentina, Perú y Estados Unidos
+              details:
+                - Análisis y recolección de requerimientos
+                - Elaboración de propuestas para clientes
+                - Diseño de arquitectura de aplicaciones
+                - Implementación de ambientes de Integración Continua y Entrega Continua (CI/CD)
+                - Planificación de ciclos de trabajo
+                - Desarrollo y pruebas de funcionalidades / historias de usuario
+                - Presentación y demostración de producto de software evolutivo
+                - Despliegue de producto de software final
+                - Elaboración de pruebas de conceptos
+              projects:
+                - title: "Proyecto: Haku - Miami, FL"
+                  description:
+                      - Elaboración de una arquitectura para un proyecto iOS nativo white label
+                      - Configuración de los ambientes de Integración Continua y Entrega Continua (CI/CD)
+                      - Discusiones técnicas de cada funcionalidad para los ciclos de trabajo
+                      - Desarrollo e implementación de las funcionalidades
+                      - "Tecnologías: iOS, Swift, Firebase Firestore Database, Firebase Storage, Firebase Functions, NewRelic"
+                - title: "Proyecto: D3 Banking - Minneapolis, MN"
+                  description:
+                      - "Parte del equipo de iOS Core Banking. Aplicación iOS móvil nativa white-label para iPhone/iPad/apple watch que integra multiples funcionalidades de banca: Autenticación, MFA, biometrics, as: authentication, MFA, biometrics, feature tour, cuentas, transferencias, depósitos, documentos electrónicos. También integra funcionalidades a través de componentes web embebidos. Soporte de texto localizado y configuración de temas, permite deployment a medida para diferentes clientes bancos. Atributos de calidad : Flexibilidad y modularidad"
+                      - Desarrollo e integración de nuevas funcionalidades. Actualización de documentación
+                      - Participación en la definición de funcionalidades nuevas
+                      - Discusión de implementación técnica de cada tarea de trabajo
+                      - Revisión de código del equipo asegurando calidad y buenas prácticas
+                      - "Equipo: 5 desarrolladores iOS, 5 desarrolladores Android, 2 ingenieros de integración y administración de plataforma, 4 desarrolladores web, 2 analistas QA, 2 jefes de proyecto"
+                      - "Tecnologías: iOS, Swift, servidor de integración continua propio: Jarvis, Bitrise, NewRelic, TestFlight, Firebase"
+                - title: "Proyecto: Breeze CareCloud - Miami, FL"
+                - title: "Proyecto: Ilumno - Miami, FL"
+                - title: "Proyecto: MCCA MoCCA Service Order Delivery ( SOD ) - Boston, MA"
+                - title: "Proyecto: MoCCA Upgrade - Boston, MA"
+        - title: Ingeniero de Software iOS
+          subtitle: ( 2012 - 2014 )
+          places:
+            - name: Freelance
+              url:
+              description:
+              details:
+                - Servicios de consultoría para el desarrollo de aplicaciones móviles nativas
+                - Planificación de proyectos, realización de estimaciones y revisión de código durante el desarrollo
+                - Publicación y administración de aplicaciones iOS en el App Store
+              projects:
+                - title: "Proyecto: UPC Movil - Lima, Perú"
+                - title: "Proyecto: ACoRN - Ottawa, Canadá"
+            - name: Avantica Technologies
+              url: https://www.avantica.net/
+              description: Avantica es una consultora de software de Costa Rica.
+              details:
+                - Análisis de requerimientos
+                - Desarrollo y pruebas de historias de usuario
+                - Presentación y distribución de trabajo evolutivo
+                - Despliegue de producto
+              projects:
+                - title: "Proyecto: Haiku Learning Management System - Goshen, IN"
+                - title: "Proyecto: Interbank Banca Movil Update & Refactoring - Lima, Peru"
+                - title: "Proyecto: CICA Life Premium Calculator - Austin, TX"
+        - title: Practicante
+          subtitle: ( 2011 - 2012 )
+          places:
+            - name: Online Studio Productions
+              url: https://www.onlinestudioproductions.com/
+              description: Online Studio Productions es una fábrica de aplicaciones móviles en Perú.
+              details:
+                - Implementación de historias de usuario y funcionalidades de proyectos
+                - Presentación y distribución de trabajo evolutivo
+                - Despliegue de producto
+              projects:
+                - title: "Proyecto: Dislexia App - Lima, Peru"
+                - title: "Proyecto: Interactive Tale ( Los Tres Mosqueteros, Robin Hood, Tarzan, El Principito ) - Lima, Peru"
+                - title: "Proyecto: Ediciones Infantiles - Lima, Peru"
+                - title: "Proyecto: 365 Things to do as a Couple - Lima, Peru"
+education:
+    title: Educación
+    content:
+        - title: Maestría en Dirección de Sistemas y Tecnologías de la Información ( 2020 - 2021 )
+          subtitle: Universidad Peruana de Ciencias Aplicadas
+        - title: Título en Ingeniería de Software ( 2008 - 2014 )
+          subtitle: Universidad Peruana de Ciencias Aplicadas
+        - title: Certificación de Scrum Master ( 2014 )
+          subtitle: Scrum Alliance
+        - title: Inglés ( 2005 -2008 )
+          subtitle: Instituto Cultural Peruano Norteamericano
+publications:
+    title: Publicaciones
+    content:
+        - title: "Propuesta de implementación de un estándar de calidad para proyectos de desarrollo de software de una pequeña empresa - 2021"
+          url: "https://repositorioacademico.upc.edu.pe/handle/10757/656159"
+        - title: "Arquitectura de Software para una aplicación móvil basado en Atributos de Calidad siguiendo los principios del Software Engineering Institute ( SEI ) - 2014"
+          url: "https://repositorioacademico.upc.edu.pe/handle/10757/624131"
+conferences:
+    title: Conferencias
+    content:
+        - title: "WWDC 2017"
+          subtitle: "Participante"
+          url: "https://developer.apple.com/wwdc/"
+        - title: "iOS Dev UK 2016"
+          subtitle: "Participante"
+          url: "http://www.iosdevuk.com/"
+        - title: "Real Time iOS Apps with PubNub"
+          subtitle: "Expositor @ Santex Tech Meet up 2014"
+          url: "https://speakerdeck.com/coderpug/real-time-ios-apps-with-pubnub"

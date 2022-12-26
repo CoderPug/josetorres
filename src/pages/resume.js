@@ -1,11 +1,13 @@
 import * as React from "react"
 import { useState } from 'react'
 import { graphql } from 'gatsby';
+import { I18nextContext } from 'gatsby-plugin-react-i18next';
 
 import { SimpleGrid, Box, HStack, Stack, GridItem, ListItem, UnorderedList, Button } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
 
-import resumeData from  "../content/resume.yaml"
+import resumeDataES from  "../content/resume-es.yaml"
+import resumeDataEN from  "../content/resume-en.yaml"
 
 const ResumePage = () => {
 
@@ -14,6 +16,9 @@ const ResumePage = () => {
     const updateContent = () => {
         setIsExperienceExpanded(!isExperienceExpanded)
     }
+
+    const context = React.useContext(I18nextContext)
+    const resumeData = context.language === "es" ? resumeDataES : resumeDataEN
 
     return (
         <MainLayout children={
