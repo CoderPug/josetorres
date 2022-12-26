@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useState } from 'react'
+import { graphql } from 'gatsby';
 
 import { SimpleGrid, Box, HStack, Stack, GridItem, ListItem, UnorderedList, Button } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
@@ -166,4 +167,18 @@ const ResumePage = () => {
     )
   }
   
-  export default ResumePage;
+export default ResumePage;
+
+export const query = graphql`
+    query ($language: String!) {
+        locales: allLocale(filter: {language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`;

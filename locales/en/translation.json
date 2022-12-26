@@ -1,3 +1,11 @@
 {
-    "title": "Translation Example"
+    "home-title": "Software Engineer working in large-scale applications",
+    "home-subtitle": "Focus in high quality and high reliability",
+    "home-meeting-schedule": "Want to chat over a coffe? You can schedule a call with me",
+    "home-meeting-schedule-button": "here",
+    "navigation-home": "Home",
+    "navigation-resume": "Resume",
+    "footer-rights": "All rights reserved",
+    "footer-with": "with",
+    "footer-by": "by"
 }

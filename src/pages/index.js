@@ -1,4 +1,6 @@
 import * as React from "react"
+import { graphql } from 'gatsby';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 import { SimpleGrid, Text, Box, GridItem, Image, Center } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
@@ -39,8 +41,8 @@ const HomePage = () => {
                             fontSize="3xl"
                             fontWeight="bold"
                             lineHeight="shorter"
-                            >
-                            Ingeniero de Software implementado aplicaciones de alto impacto
+                        >
+                            <Trans>home-title</Trans>
                         </Text>
                         <Box 
                             layerStyle="selected"
@@ -49,8 +51,8 @@ const HomePage = () => {
                             fontSize="sm"
                             marginTop="2"
                         >
-                            Visión de producto e impacto en los objetivos empresariales
-                            </Box>
+                            <Trans>home-subtitle</Trans>
+                        </Box>
                     </Box>
                 </GridItem>
 
@@ -81,7 +83,8 @@ const HomePage = () => {
                         lineHeight="short"
                         mt={{base: "50px", md: "145px"}}
                     >
-                        Disfruto de las buenas conversaciones con un buen café. Puedes agendar una cita conmigo  <a href="https://calendly.com/josetorrescardenas/reunion-general" target="_blank">aquí</a>
+                        <Trans>home-meeting-schedule</Trans>&nbsp;
+                        <a href="https://calendly.com/josetorrescardenas/reunion-general" target="_blank"><Trans>home-meeting-schedule-button</Trans></a>
                     </Box>
                 </GridItem>
             </SimpleGrid>
@@ -89,5 +92,19 @@ const HomePage = () => {
         }/>
     )
   }
-  
-  export default HomePage;
+
+export default HomePage;
+
+export const query = graphql`
+    query ($language: String!) {
+        locales: allLocale(filter: {language: {eq: $language}}) {
+            edges {
+                node {
+                    ns
+                    data
+                    language
+                }
+            }
+        }
+    }
+`;

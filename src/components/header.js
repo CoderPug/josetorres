@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { Box, Flex, Text } from "@chakra-ui/react"
 
 import Logo from "../components/UI/logo"
@@ -80,8 +80,8 @@ const Header = (props) => {
           pt={[4, 4, 0, 0]}
           fontSize="sm"
         >
-          <MenuItems to="/">Home</MenuItems>
-          <MenuItems to="/resume">Resume</MenuItems>
+          <MenuItems to="/"> <Trans>navigation-home</Trans> </MenuItems>
+          <MenuItems to="/resume"> <Trans>navigation-resume</Trans> </MenuItems>
           {/* <MenuItems to="/">Proyectos</MenuItems>
           <MenuItems to="/">Blog</MenuItems> */}
         </Flex>
@@ -90,4 +90,4 @@ const Header = (props) => {
   )
 }
 
-export default Header
+export default Header;

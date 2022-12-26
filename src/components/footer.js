@@ -1,6 +1,7 @@
 import * as React from "react"
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 
-import { Box, Flex, Text, Stack, Center, Tooltip, Link } from "@chakra-ui/react"
+import { Box, Flex, Text, Stack, Center, Tooltip } from "@chakra-ui/react"
 
 import "../styles/footer.scss"
 
@@ -34,7 +35,7 @@ const Footer = (props) => {
                     textAlign={{ base: 'center', md: 'start' }}
                     w="full"
                 >
-                    <Text>&copy; {new Date().getFullYear()} - Derechos reservados</Text>
+                    <Text>&copy; {new Date().getFullYear()} - <Trans>footer-rights</Trans> </Text>
                     <Box flexGrow="1"/>
                     { props.showSocialMediaLinks ? 
                         <div>
@@ -47,15 +48,15 @@ const Footer = (props) => {
                     }
                 </Stack>
             </Flex>
-            
+
             <Tooltip label="CoderPug" aria-label="A tooltip">
                 <Center margin="4">
-                con <HeartIcon /> por <PugIcon />
+                    <Trans>footer-with</Trans> <HeartIcon /> <Trans>footer-by</Trans> <PugIcon />
                 </Center>
             </Tooltip>
-            
+
         </Box>
     )
 }
-  
+
 export default Footer;
