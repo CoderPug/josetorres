@@ -2,6 +2,8 @@ import * as React from "react"
 
 import { SimpleGrid, HStack, GridItem, Image, Center, Box, Button, VStack, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton, useDisclosure } from "@chakra-ui/react"
 
+import { graphql } from 'gatsby';
+
 import BaseLayout from "./baseLayout"
 import PugIcon from "../components/UI/pugIcon"
 
@@ -73,7 +75,7 @@ const ContactMePage = (props) => {
                     colEnd={10}
                     textAlign="center"
                 >
-                    <Box fontWeight="light">Software Engineer @ Glovo</Box>
+                    <Box fontWeight="light">Software Engineer @Glovo</Box>
                     <Box fontWeight="light">🇵🇪🇪🇸</Box>
                 </GridItem>
                 <GridItem
@@ -100,7 +102,7 @@ const ContactMePage = (props) => {
                         {
                                 (new URLSearchParams(props.location.search).get("access") === "coche") ? 
                                 <HStack spacing="30px">
-                                    <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } />.</a></button>
+                                    <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } /> </a></button>
                                     <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank" rel="noreferrer"><Image width="45px" src={ FacebookImage } /> </a></button>
                                     <button><a href="https://www.instagram.com/josetorrespe/" target="_blank" rel="noreferrer"><Image width="45px" src={ InstagramImage } /> </a></button>
                                 </HStack> 
@@ -132,4 +134,18 @@ const ContactMePage = (props) => {
     )
   }
   
-  export default ContactMePage;
+export default ContactMePage;
+
+export const query = graphql`
+query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+        edges {
+            node {
+                ns
+                data
+                language
+            }
+        }
+    }
+}
+`;
