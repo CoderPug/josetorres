@@ -3,6 +3,10 @@ import * as React from "react"
 import { SimpleGrid, Text, Box, GridItem  } from "@chakra-ui/react"
 import MainLayout from "./mainLayout"
 
+import { Trans } from 'gatsby-plugin-react-i18next';
+
+import { graphql } from 'gatsby';
+
 const HomePage = () => {
     return (
         <MainLayout children={
@@ -30,7 +34,7 @@ const HomePage = () => {
                             fontSize="sm"
                             marginTop="2"
                         >
-                            Coche aún no implementó esta página.
+                            <Trans>404-message</Trans>
                             </Box>
                     </Box>
                 </GridItem>
@@ -41,4 +45,18 @@ const HomePage = () => {
     )
   }
   
-  export default HomePage;
+export default HomePage;
+
+export const query = graphql`
+query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+        edges {
+            node {
+                ns
+                data
+                language
+            }
+        }
+    }
+}
+`;
