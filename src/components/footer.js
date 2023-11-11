@@ -1,7 +1,7 @@
 import * as React from "react"
-import { Link, Trans } from 'gatsby-plugin-react-i18next';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
-import { Box, Flex, Text, Stack, Center, Tooltip } from "@chakra-ui/react"
+import { Link, Box, Flex, Text, Stack, Center, Tooltip } from "@chakra-ui/react"
 
 import "../styles/footer.scss"
 
