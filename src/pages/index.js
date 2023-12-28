@@ -22,7 +22,7 @@ const HomePage = () => {
             <SimpleGrid columns="8" spacing="5" maxW="960px" alignItems="center" mx="auto">
                 <GridItem 
                     colStart={2} 
-                    colEnd={{base: 8, md: 5}} 
+                    colEnd={{base: 8, md: 6}} 
                     h={{base:450, md:400}}
                     position="relative" 
                 >
@@ -32,12 +32,11 @@ const HomePage = () => {
                             boxSize="200px"
                             mt="5"
                             src={ mediumImageElement } 
-                        />                        
+                        />
                     </Center>
 
                     <Box position="absolute" bottom={{md: "0"}} mt={{base: "10"}} >
                         <Text
-                            color="primary.100"
                             fontSize="3xl"
                             fontWeight="bold"
                             lineHeight="shorter"

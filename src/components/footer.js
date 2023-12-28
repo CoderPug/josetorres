@@ -51,7 +51,7 @@ const Footer = (props) => {
 
             <Tooltip label="CoderPug" aria-label="A tooltip">
                 <Center margin="4">
-                    <Trans>footer-with</Trans> <HeartIcon /> <Trans>footer-by</Trans> <PugIcon />
+                    <Trans>footer-with</Trans> <HeartIcon /> <Trans>footer-by</Trans> <PugIcon/>
                 </Center>
             </Tooltip>
 

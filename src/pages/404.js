@@ -21,7 +21,6 @@ const HomePage = () => {
                 >
                     <Box position="absolute" bottom="0">
                         <Text
-                            color="primary.100"
                             fontSize="3xl"
                             fontWeight="extrabold"
                             lineHeight="shorter"

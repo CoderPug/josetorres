@@ -1,12 +1,18 @@
- .heart {
+@use 'global';
+
+.heart {
     position: relative;
     width: 12px;
     animation: pulse 1s ease infinite;
     margin: 0 0.3rem 0 0.3rem;
 }
  
-.mini-coderpug {
+.mini-coderpug-container {
     margin-left: 0.3rem;
+}
+
+.mini-coderpug-vector {
+    fill: global.$color-main;
 }
 
 @keyframes pulse {

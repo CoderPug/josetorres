@@ -4,8 +4,15 @@ $duration: .2s;
 $distance: 10px;
 $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
+html {
+  body {
+    background-color: global.$color-background;
+    color: global.$color-main;
+  }
+}
+
 a {
-  color: global.$color-B;
+  color: global.$color-actionable;
   text-decoration: none;
 }
 
@@ -20,7 +27,7 @@ a {
     bottom: 2px;
     left: 0; right: 0;
     height: 2px;
-    background-color: global.$color-B;
+    background-color: global.$color-actionable;
   }
   &:before {
     opacity: 0;

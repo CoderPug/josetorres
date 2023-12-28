@@ -1,0 +1,9 @@
+@use 'global';
+
+.button-actionable {
+    color: global.$color-actionable;
+}
+
+.place-description {
+    color: global.$color-secondary;
+}

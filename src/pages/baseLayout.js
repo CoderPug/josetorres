@@ -4,6 +4,7 @@ import Footer from "../components/footer"
 import { Global, ChakraProvider, Flex, extendTheme } from "@chakra-ui/react"
 
 import "../styles/home.scss"
+import "../styles/resume.scss"
 
 const Fonts = () => (
     <Global

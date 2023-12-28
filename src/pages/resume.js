@@ -39,7 +39,7 @@ const ResumePage = () => {
 
                     <Box fontWeight="bold" fontSize="xl" marginTop="7">
                         { resumeData.experience.title }
-                        <Button color="#12CAD6" variant='link' onClick={ updateContent }>
+                        <Button className="button-actionable" variant='link' marginLeft="-2.5" onClick={ updateContent }>
                             +
                         </Button>
                     </Box>
@@ -50,10 +50,7 @@ const ResumePage = () => {
                                     <Stack direction={{base:['column'], md:['row']}} align={{md:'center'}}>
                                         <Box fontWeight="bold" fontSize={ isExperienceExpanded ? "lg" : "g" }>{ data.title ?? "" }</Box>
                                         {
-                                            data.current ? 
-                                                <Box fontWeight="bold" fontSize="sm" color="#12CAD6">{ data.subtitle ?? "" }</Box>
-                                                :
-                                                <Box fontWeight="semibold" fontSize="sm">{ data.subtitle ?? "" }</Box>
+                                            <Box fontWeight="semibold" fontSize="sm">{ data.subtitle ?? "" }</Box>
                                         }
                                     </Stack>
                                     { 
@@ -66,7 +63,7 @@ const ResumePage = () => {
                                                             <a href={ place.url } target="_blank">{ place.url ?? "" }</a>
                                                         </Box>
                                                     </HStack>
-                                                    <Box fontStyle="italic" fontSize="sm" color="#888888">{ place.description ?? "" }</Box>
+                                                    <Box fontStyle="italic" fontSize="sm" className="place-description">{ place.description ?? "" }</Box>
                                                     <Box fontSize="sm">
                                                         <UnorderedList>
                                                             {
