@@ -12,7 +12,7 @@
 }
 
 .mini-coderpug-vector {
-    fill: global.$color-main;
+    fill: var(--color-main);
 }
 
 @keyframes pulse {

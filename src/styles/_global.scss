@@ -1,4 +1,23 @@
-$color-main: #434343;
-$color-secondary: #5E666E;
-$color-actionable: #097CBC;
-$color-background: #FDFDFD; 
+
+$color-main-light: #434343;
+$color-main-dark: #FDFDFD;
+$color-secondary-light: #5E666E;
+$color-secondary-dark: #8e8e8e;
+$color-actionable-light: #097CBC;
+$color-actionable-dark: #39a6e0;
+$color-background-light: #FDFDFD; 
+$color-background-dark: #222;
+
+:root {
+    --color-main: #{$color-main-light};
+    --color-secondary: #{$color-secondary-light};
+    --color-actionable: #{$color-actionable-light};
+    --color-background: #{$color-background-light};
+}
+
+:root.dark {
+    --color-main: #{$color-main-dark};
+    --color-secondary: #{$color-secondary-dark};
+    --color-actionable: #{$color-actionable-dark};
+    --color-background: #{$color-background-dark};
+}
