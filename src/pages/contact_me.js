@@ -1,11 +1,12 @@
 import * as React from "react"
 
-import { SimpleGrid, HStack, GridItem, Image, Center, Box, Button, VStack, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton, useDisclosure } from "@chakra-ui/react"
+import { SimpleGrid, GridItem, Image, Center, Box, Button, VStack, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton, useDisclosure, Link } from "@chakra-ui/react"
 
 import { graphql } from 'gatsby';
 
 import BaseLayout from "./baseLayout"
 import PugIcon from "../components/UI/pugIcon"
+import SocialSection from "../components/SocialSection"
 
 import AvatarHomeImageC from '../images/home-josetorres-avatar.jpeg'
 import TwitterImage from '../images/button-image-twitter.png'
@@ -75,8 +76,8 @@ const ContactMePage = (props) => {
                     colEnd={10}
                     textAlign="center"
                 >
-                    <Box fontWeight="light">Software Engineer @Glovo</Box>
-                    <Box fontWeight="light">🇵🇪🇪🇸</Box>
+                   <Box fontWeight="light">Software Engineer @ <Link href="https://www.glovoapp.com" target="_blank" rel="noreferrer">Glovo</Link></Box>
+                   <Box fontWeight="light">🇵🇪&nbsp;🇪🇸</Box>
                 </GridItem>
                 <GridItem
                     colStart={1} 
@@ -92,23 +93,7 @@ const ContactMePage = (props) => {
                     mt="10"
                     alignContent="center"
                 >
-                    <VStack spacing="20px">
-                        <HStack spacing="30px">
-                            <button><a href="mailto:torres.cardenas.jose@me.com"><Image width="45px" src={ EmailImage } /> </a></button>
-                            <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer"><Image width="45px" src={ LinkedinImage } /> </a></button>
-                            <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer"><Image width="45px" src={ TwitterImage } /> </a></button>
-                            <button><a href="https://github.com/CoderPug" target="_blank" rel="noreferrer"><Image width="45px" src={ GithubImage } /> </a></button>
-                        </HStack>
-                        {
-                                (new URLSearchParams(props.location.search).get("access") === "coche") ? 
-                                <HStack spacing="30px">
-                                    <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hi!"><Image width="45px" src={ WhatsappImage } /> </a></button>
-                                    <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank" rel="noreferrer"><Image width="45px" src={ FacebookImage } /> </a></button>
-                                    <button><a href="https://www.instagram.com/josetorrespe/" target="_blank" rel="noreferrer"><Image width="45px" src={ InstagramImage } /> </a></button>
-                                </HStack> 
-                                : <></>
-                        }
-                    </VStack>
+                    <SocialSection showAll={(new URLSearchParams(props.location.search).get("access") === "coche")} />
                 </GridItem>
                 <GridItem
                     colStart={1} 

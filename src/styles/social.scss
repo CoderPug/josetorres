@@ -1,0 +1,33 @@
+@use 'global';
+
+.social-icon-svg {
+    fill: var(--color-social-icons-fill);
+    transition: all 0.25s ease
+}
+
+.social-icon-svg:hover {
+    transform: scale(1.1)
+}
+
+.social-icon-svg-github {
+    background-color: var(--color-social-icons-fill);
+    fill: var(--color-social-icons-background);
+    border-radius: 50%;
+    padding: 0.1175em;
+    transition: all 0.25s ease
+}
+
+.social-icon-svg-github:hover {
+    transform: scale(1.1)
+}
+
+.social-icon-content {
+    height: 45px;
+    width: 45px;
+    background-color: var(--color-social-icons-background);
+    transition: all 0.25s ease
+}
+
+.social-icon-content:hover {
+    transform: scale(1.1)
+}

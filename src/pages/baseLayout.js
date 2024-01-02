@@ -142,7 +142,8 @@ const BaseLayout = (props) => {
     useEffect(() => {
         const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
         if (darkQuery.matches) {
-            console.log('The user prefers dark mode!');
+            // console.log('The user prefers dark mode!');
+            document.documentElement.className = 'dark';
         }
 
         darkQuery.addListener(e => {

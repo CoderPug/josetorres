@@ -1,18 +1,23 @@
+$color-soft-white: #FDFDFD;
 
 $color-main-light: #434343;
-$color-main-dark: #FDFDFD;
+$color-main-dark: $color-soft-white;
 $color-secondary-light: #5E666E;
 $color-secondary-dark: #8e8e8e;
 $color-actionable-light: #097CBC;
 $color-actionable-dark: #39a6e0;
-$color-background-light: #FDFDFD; 
+$color-background-light: $color-soft-white; 
 $color-background-dark: #222;
+$color-background-dark-tone2: #2f2f2f;
 
 :root {
     --color-main: #{$color-main-light};
     --color-secondary: #{$color-secondary-light};
     --color-actionable: #{$color-actionable-light};
     --color-background: #{$color-background-light};
+    --color-social-icons-fill: #{$color-soft-white};
+    --color-social-icons-fill-github: #{$color-soft-white};
+    --color-social-icons-background: #{$color-background-dark};
 }
 
 :root.dark {
@@ -20,4 +25,7 @@ $color-background-dark: #222;
     --color-secondary: #{$color-secondary-dark};
     --color-actionable: #{$color-actionable-dark};
     --color-background: #{$color-background-dark};
+    --color-social-icons-fill: #{$color-soft-white};
+    --color-social-icons-fill-github: #{$color-background-dark};
+    --color-social-icons-background: #{$color-background-dark-tone2};
 }
