@@ -57,8 +57,6 @@ module.exports = {
         name: `Jose Torres`,
         short_name: `Coche`,
         description: `Welcome to my personal page!`,
-        background_color: `#f7f0eb`,
-        theme_color: `#ffffff`,
         display: `standalone`,
         icon: `src/images/icon.png`
       },
