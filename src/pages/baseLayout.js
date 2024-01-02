@@ -157,6 +157,7 @@ const BaseLayout = (props) => {
         <ChakraProvider theme={theme}>
             <head>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
             </head>
             <Flex
                 theme={theme}
