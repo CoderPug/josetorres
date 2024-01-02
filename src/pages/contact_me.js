@@ -9,13 +9,6 @@ import PugIcon from "../components/UI/pugIcon"
 import SocialSection from "../components/SocialSection"
 
 import AvatarHomeImageC from '../images/home-josetorres-avatar.jpeg'
-import TwitterImage from '../images/button-image-twitter.png'
-import FacebookImage from '../images/button-image-facebook.png'
-import InstagramImage from '../images/button-image-instagram.png'
-import LinkedinImage from '../images/button-image-linkedin.png'
-import WhatsappImage from '../images/button-image-whatsapp.png'
-import GithubImage from '../images/button-image-github.png'
-import EmailImage from '../images/button-image-email.png'
 import QRCodeImageA from '../images/contact-josetorres-qr-code.jpeg'
 import QRCodeImageB from '../images/contact-josetorres-qr-code-personal.jpeg'
 
