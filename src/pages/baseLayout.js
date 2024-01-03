@@ -1,7 +1,7 @@
 import * as React from "react"
 import Footer from "../components/footer"
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Global, ChakraProvider, Flex, extendTheme } from "@chakra-ui/react"
 
 import "../styles/home.scss"
@@ -139,17 +139,21 @@ const theme = extendTheme({
 
 const BaseLayout = (props) => {
 
+    const [isDarkMode, setIsDarkMode] = useState(null)
+
     useEffect(() => {
         const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
         if (darkQuery.matches) {
             // console.log('The user prefers dark mode!');
             document.documentElement.className = 'dark';
+            setIsDarkMode(true)
         }
 
         darkQuery.addListener(e => {
             window.__theme = theme;
             // console.log('Theme updated:', theme);
             document.documentElement.className = (e.matches) ? 'dark' : '';
+            setIsDarkMode(e.matches)
         });
     }, []);
 
@@ -160,6 +164,7 @@ const BaseLayout = (props) => {
                 <meta name="apple-mobile-web-app-capable" content="yes"/>
                 <meta name="mobile-web-app-capable" content="yes"/>
                 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+                <meta name="theme-color" content={isDarkMode ? "#222" : "#FDFDFD"}/>
             </head>
             <Flex
                 theme={theme}
@@ -169,7 +174,7 @@ const BaseLayout = (props) => {
                 minH="900"
                 m="0 auto"
                 >
-                
+
                 {props.children}
 
             </Flex>
