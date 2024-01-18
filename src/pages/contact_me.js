@@ -69,7 +69,7 @@ const ContactMePage = (props) => {
                     colEnd={10}
                     textAlign="center"
                 >
-                   <Box fontWeight="light">Software Engineer @ <Link href="https://www.glovoapp.com" target="_blank" rel="noreferrer">Glovo</Link></Box>
+                   <Box fontWeight="light">Software Engineer @ <Link href="https://www.glovoapp.com" target="_blank" rel="noreferrer" class="with-style">Glovo</Link></Box>
                    <Box fontWeight="light">🇵🇪&nbsp;🇪🇸</Box>
                 </GridItem>
                 <GridItem
@@ -102,7 +102,7 @@ const ContactMePage = (props) => {
                                     : <></>
                             }
                             <Button variant="outline">
-                                <a href="/">Home</a>
+                                <a href="/" class="without-style">Home</a>
                             </Button>
                         </VStack>
                     </Center>

@@ -1,9 +1,5 @@
 @use 'global';
 
-$duration: .2s;
-$distance: 10px;
-$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-
 html {
   body {
     background-color: var(--color-background);
@@ -11,12 +7,23 @@ html {
   }
 }
 
-a {
-  color: var(--color-actionable);
+// Links without style
+
+a.without-style {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--color-actionable);
+  }
+}
+
+// Links with style
+
+a.with-style {
   text-decoration: none;
 }
 
-a {
+a.with-style {
   position: relative;
   padding-bottom: 4px;
 
@@ -26,31 +33,16 @@ a {
     position: absolute;
     bottom: 2px;
     left: 0; right: 0;
-    height: 2px;
-    background-color: var(--color-actionable);
-  }
-  &:before {
-    opacity: 0;
-    transform: translateY(- $distance);
-    transition: transform 0s $easeOutBack, opacity 0s;
-  }
-  &:after {
-    opacity: 0;
-    transform: translateY($distance/2);
-    transition: transform $duration $easeOutBack, opacity $duration;
+    height: 1px;
+    color: var(--color-main);
+    background-color: var(--color-main);
   }
   &:hover,
   &:focus {
+    color: var(--color-actionable);
     &:before,
     &:after {
-      opacity: 0.4;
-      transform: translateY(0);
+      background-color: var(--color-actionable);
     }
-    &:before {
-      transition: transform $duration $easeOutBack, opacity $duration;
-    }
-    &:after {
-      transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-    }
-  }
+  } 
 }

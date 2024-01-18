@@ -74,8 +74,8 @@ const Header = (props) => {
           pt={[4, 4, 0, 0]}
           fontSize="sm"
         >
-          <MenuItems to="/"> <Trans>navigation-home</Trans> </MenuItems>
-          <MenuItems to="/resume"> <Trans>navigation-resume</Trans> </MenuItems>
+          <MenuItems to="/"> <a class="without-style"><Trans>navigation-home</Trans></a> </MenuItems>
+          <MenuItems to="/resume"> <a class="without-style"><Trans>navigation-resume</Trans></a> </MenuItems>
           {/* <MenuItems to="/">Proyectos</MenuItems>
           <MenuItems to="/">Blog</MenuItems> */}
         </Flex>

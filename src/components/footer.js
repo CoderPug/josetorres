@@ -39,9 +39,9 @@ const Footer = (props) => {
                     <Box flexGrow="1"/>
                     { props.showSocialMediaLinks ? 
                         <div>
-                            <Link href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer">Twitter</Link> /&nbsp;
-                            <Link href="https://github.com/CoderPug" target="_blank" rel="noreferrer">Github</Link> /&nbsp;
-                            <Link href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer">Linkedin</Link>
+                            <Link href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer" class="without-style">Twitter</Link> /&nbsp;
+                            <Link href="https://github.com/CoderPug" target="_blank" rel="noreferrer" class="without-style">Github</Link> /&nbsp;
+                            <Link href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer" class="without-style">Linkedin</Link>
                         </div>
                         :
                         null

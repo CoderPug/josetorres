@@ -60,7 +60,7 @@ const ResumePage = () => {
                                                     <HStack>
                                                         <Box fontWeight={ isExperienceExpanded ? "bold" : "regular" } fontSize="sm">{ place.name ?? "" }</Box>
                                                         <Box fontSize="xs" color="#888888" paddingTop="0.5">
-                                                            <a href={ place.url } target="_blank">{ place.url ?? "" }</a>
+                                                            <a href={ place.url } target="_blank" class="with-style">{ place.url ?? "" }</a>
                                                         </Box>
                                                     </HStack>
                                                     <Box fontStyle="italic" fontSize="sm" className="place-description">{ place.description ?? "" }</Box>

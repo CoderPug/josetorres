@@ -83,7 +83,7 @@ const HomePage = () => {
                         mt={{base: "50px", md: "145px"}}
                     >
                         <Trans>home-meeting-schedule</Trans>&nbsp;
-                        <a href="https://calendly.com/josetorrescardenas/reunion-general" target="_blank"><Trans>home-meeting-schedule-button</Trans></a>
+                        <a href="https://calendly.com/josetorrescardenas/reunion-general" target="_blank" class="with-style"><Trans>home-meeting-schedule-button</Trans></a>
                     </Box>
                 </GridItem>
             </SimpleGrid>
