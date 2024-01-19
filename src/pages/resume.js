@@ -54,14 +54,14 @@ const ResumePage = () => {
                     {
                     resumeData.experience.content.map((data, index) => {
                         return (
-                            <Box fontSize="sm" marginTop="5px">
-                                <Stack direction={"row"} align={{md:'center'}}>
+                            <Box fontSize="sm" marginTop="1">
+                                <Stack direction={{sm:"row", base:"column"}} align={{md:'center'}} spacing={{sm:"2", base:"0"}}>
                                     <Box fontWeight="semibold">{ data.title ?? "" }</Box>
                                     <Box fontWeight="light" fontSize="xs">
                                         <a href={ data.places[0].url } target="_blank" class="with-style">{ data.places[0].name ?? "" }</a>
                                     </Box>
                                 </Stack>
-                                <Box fontWeight="light" fontSize="xs" className="subtitle">{ data.subtitle ?? "" }</Box>
+                                <Box paddingTop={{sm:"0", base:"1"}} fontWeight="light" fontSize="xs" className="subtitle">{ data.subtitle ?? "" }</Box>
                             </Box>
                         )
                     })
