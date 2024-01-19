@@ -6,8 +6,8 @@ summary:
 experience:
     title: Experience
     content:
-        - title: Senior Software Engineer IV
-          subtitle: ( 2021 - present )
+        - title: Senior Software Engineer IV / Lead Engineer
+          subtitle: 2021 - present
           current: true
           places:
             - name: Glovo
@@ -18,8 +18,8 @@ experience:
               projects:
                 - title: "Team: Payments Experience - Barcelona, Spain"
                   current: true
-        - title: Part-Time Teacher / Instructor
-          subtitle: ( 2020 - present )
+        - title: Part-Time Teacher
+          subtitle: 2020 - present
           current: true
           places:
             - name: Universidad Peruana de Ciencias Aplicadas
@@ -38,7 +38,7 @@ experience:
                 - title: "Course: Object-Oriented Programming"
                 - title: "Course: User Experience (UX)"
         - title: Senior Software Engineer / Tech Lead
-          subtitle: ( 2014 - 2021 )
+          subtitle: 2014 - 2021
           current: false
           places:
             - name: Santex Group
@@ -76,18 +76,8 @@ experience:
                 - title: "Project: MCCA MoCCA Service Order Delivery ( SOD ) - Boston, MA"
                 - title: "Project: MoCCA Upgrade - Boston, MA"
         - title: Software Engineer iOS
-          subtitle: ( 2012 - 2014 )
+          subtitle: 2012 - 2014
           places:
-            - name: Freelance
-              url:
-              description:
-              details:
-                - Consulting services for native mobile developments
-                - Project planning, time validations and code review during development
-                - Publish iOS products and management of Apple store/account
-              projects:
-                - title: "Project: UPC Movil - Lima, Peru"
-                - title: "Project: ACoRN - Ottawa, Canada"
             - name: Avantica Technologies
               url: https://www.avantica.net/
               description: Avantica is a software development company based in Costa Rica.
@@ -101,7 +91,7 @@ experience:
                 - title: "Project: Interbank Banca Movil Update & Refactoring - Lima, Peru"
                 - title: "Project: CICA Life Premium Calculator - Austin, TX"
         - title: Intern
-          subtitle: ( 2011 - 2012 )
+          subtitle: 2011 - 2012
           places:
             - name: Online Studio Productions
               url: https://www.onlinestudioproductions.com/
@@ -118,14 +108,14 @@ experience:
 education:
     title: "Education"
     content:
-        - title: Master’s in Information Systems and Technology Management ( 2020 - 2021 )
-          subtitle: Universidad Peruana de Ciencias Aplicadas
-        - title: Software Engineering ( 2008 - 2014 ) Equivalent to a 5-year degree in Computer Engineering
-          subtitle: Universidad Peruana de Ciencias Aplicadas
-        - title: Scrum Master Certification ( 2014 )
-          subtitle: Scrum Alliance
-        - title: English as a second language study ( 2005 -2008 )
-          subtitle: Instituto Cultural Peruano Norteamericano
+        - title: Master’s in Information Systems and Technology Management
+          subtitle: 2020 - 2021 - Universidad Peruana de Ciencias Aplicadas
+        - title: Software Engineering - Equivalent to a degree in Computer Engineering
+          subtitle: 2008 - 2014 - Universidad Peruana de Ciencias Aplicadas
+        - title: Scrum Master Certification
+          subtitle: 2014 - Scrum Alliance
+        - title: English as a second language study
+          subtitle: 2005 - 2008 - Instituto Cultural Peruano Norteamericano
 publications:
     title: "Publications"
     content:
