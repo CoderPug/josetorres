@@ -53,42 +53,59 @@ const ReadCVIcon = () => (
 )
 
 const SocialSection = (props) => {
-    return(
-        <VStack spacing="20px">
-            <HStack spacing="30px">
-                <Circle className="social-icon-content"> 
-                    <button><a href="mailto:torres.cardenas.jose@me.com"><EmailIcon/></a></button>
-                </Circle>
-                <Circle className="social-icon-content">
-                    <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer"><LinkedinIcon/></a></button>
-                </Circle>
-                <Circle className="social-icon-content">
-                    <button><a href="https://read.cv/coderpug" target="_blank" rel="noreferrer"><ReadCVIcon/></a></button>
-                </Circle>
-                <Circle className="social-icon-content">
-                    <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer"><TwitterIcon/></a></button>
-                </Circle>
-                <Circle className="social-icon-content">
-                    <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer"><GithubIcon/></a></button>
-                </Circle>
-            </HStack>
-            {
-                (props.showAll) ? 
-                    <HStack spacing="30px">
-                        <Circle className="social-icon-content">
-                            <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank" rel="noreferrer"><FacebookIcon/></a></button>
-                        </Circle>
-                        <Circle className="social-icon-content">
-                            <button><a href="https://www.instagram.com/josetorrespe/" target="_blank" rel="noreferrer"><InstagramIcon/></a></button>
-                        </Circle>
-                        <Circle className="social-icon-content">
-                            <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hey!"><WhatsAppIcon/></a></button>
-                        </Circle>
-                    </HStack>
-                    : <></>
-            }
-        </VStack>
-    )
+    return (props.showAll) ?
+    <VStack spacing="20px">
+        <HStack spacing="30px">
+            <Circle className="social-icon-content"> 
+                <button><a href="mailto:torres.cardenas.jose@me.com" aria-label="email"><EmailIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://read.cv/coderpug" target="_blank" rel="noreferrer" aria-label="readcv"><ReadCVIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer" aria-label="linkedin"><LinkedinIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer" aria-label="github"><GithubIcon/></a></button>
+            </Circle>
+        </HStack>
+        <HStack spacing="30px">
+            <Circle className="social-icon-content">
+                <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer" aria-label="twitter"><TwitterIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.facebook.com/joseemiliotorrescardenas" target="_blank" rel="noreferrer" aria-label="facebook"><FacebookIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.instagram.com/josetorrespe/" target="_blank" rel="noreferrer" aria-label="instagram"><InstagramIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://api.whatsapp.com/send?phone=+34644783761&text=Hey!" aria-label="whatsapp"><WhatsAppIcon/></a></button>
+            </Circle>
+        </HStack>
+    </VStack>
+    : 
+    <VStack spacing="20px">
+        <HStack spacing="30px">
+            <Circle className="social-icon-content"> 
+                <button><a href="mailto:torres.cardenas.jose@me.com" aria-label="email"><EmailIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer" aria-label="twitter"><TwitterIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer" aria-label="github"><GithubIcon/></a></button>
+            </Circle>
+        </HStack>
+        <HStack spacing="30px">
+            <Circle className="social-icon-content">
+                <button><a href="https://read.cv/coderpug" target="_blank" rel="noreferrer" aria-label="readcv"><ReadCVIcon/></a></button>
+            </Circle>
+            <Circle className="social-icon-content">
+                <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer" aria-label="linkedin"><LinkedinIcon/></a></button>
+            </Circle>
+        </HStack>
+    </VStack>
 }
 
 export default SocialSection;
