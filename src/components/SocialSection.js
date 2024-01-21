@@ -46,6 +46,12 @@ const WhatsAppIcon = () => (
     </svg>
 )
 
+const ReadCVIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256" class="social-icon-svg">
+        <path d="m210.78 39.25l-130.25-23A16 16 0 0 0 62 29.23l-29.75 169a16 16 0 0 0 13 18.53l130.25 23a16 16 0 0 0 18.54-13l29.75-169a16 16 0 0 0-13.01-18.51M178.26 224L48 201L77.75 32L208 55ZM89.34 58.42a8 8 0 0 1 9.27-6.48l83 14.65a8 8 0 0 1-1.39 15.88a8.36 8.36 0 0 1-1.4-.12l-83-14.66a8 8 0 0 1-6.48-9.27M83.8 89.94a8 8 0 0 1 9.27-6.49l83 14.66a8 8 0 0 1-1.4 15.89a7.55 7.55 0 0 1-1.41-.13l-83-14.65a8 8 0 0 1-6.46-9.28m-5.55 31.51a8 8 0 0 1 9.27-6.45l41.48 7.29a8 8 0 0 1-1.38 15.88a8.27 8.27 0 0 1-1.4-.12l-41.5-7.33a8 8 0 0 1-6.47-9.27"/>
+    </svg>
+)
+
 const SocialSection = (props) => {
     return(
         <VStack spacing="20px">
@@ -55,6 +61,9 @@ const SocialSection = (props) => {
                 </Circle>
                 <Circle className="social-icon-content">
                     <button><a href="https://www.linkedin.com/in/coderpug/" target="_blank" rel="noreferrer"><LinkedinIcon/></a></button>
+                </Circle>
+                <Circle className="social-icon-content">
+                    <button><a href="https://read.cv/coderpug" target="_blank" rel="noreferrer"><ReadCVIcon/></a></button>
                 </Circle>
                 <Circle className="social-icon-content">
                     <button><a href="https://www.twitter.com/coderpug" target="_blank" rel="noreferrer"><TwitterIcon/></a></button>

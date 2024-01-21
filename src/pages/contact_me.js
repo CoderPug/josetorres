@@ -20,13 +20,13 @@ const DisplayQRCode = (props) => {
 
         <Modal isOpen={isOpen} onClose={onClose} size={"xs"}>
           <ModalOverlay />
-          <ModalContent>
+          <ModalContent className="main-style">
             <ModalCloseButton />
             <ModalBody textAlign="center" mt="8">
                 Please scan this QR Code <br/> to access my contact page
             </ModalBody>
             <Center paddingBottom="8">
-                <VStack>
+                <VStack spacing="5">
                     <Image width="70%" src={ (props.personal === true) ? QRCodeImageB : QRCodeImageA }></Image>
                     <PugIcon/>
                 </VStack>

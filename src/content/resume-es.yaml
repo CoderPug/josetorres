@@ -9,7 +9,7 @@ experience:
     title: Experiencia
     content:
         - title: Ingeniero de Software - Nivel Senior IV / Líder 
-          subtitle: 2021 - present
+          subtitle: 10/2021 - presente
           current: true
           places:
             - name: Glovo
@@ -20,23 +20,8 @@ experience:
               projects:
                 - title: "Equipo: Experiencia de Pagos (PX) - Barcelona, España"
                   current: true
-        - title: Profesor Tiempo Parcial
-          subtitle: 2020 - present
-          current: true
-          places:
-            - name: Universidad Peruana de Ciencias Aplicadas
-              url: https://upc.edu.pe/
-              description: UPC es una de las universidades más prestigiosas del Perú
-              details:
-                - Enseñanza de cursos dentro del programa para profesionales que trabajan (EPE)
-                - "Lenguajes de programación: java, ruby"
-              projects:
-                - title: "Curso: Fundamentos de la Programación"
-                - title: "Curso: Estructura de Datos y Algoritmos"
-                - title: "Curso: Programación Orientada a Objetos"
-                - title: "Curso: Experiencia de Usuario (UX)"
         - title: Ingeniero de Software - Nivel Senior / Líder Técnico
-          subtitle: 2014 - 2021
+          subtitle: 02/2014 - 10/2021
           current: false
           places:
             - name: Santex
@@ -74,7 +59,7 @@ experience:
                 - title: "Proyecto: MCCA MoCCA Service Order Delivery ( SOD ) - Boston, MA"
                 - title: "Proyecto: MoCCA Upgrade - Boston, MA"
         - title: Ingeniero de Software iOS
-          subtitle: 2012 - 2014
+          subtitle: 07/2012 - 01/2014
           places:
             - name: Avantica Technologies
               url: https://www.avantica.net/
@@ -88,8 +73,8 @@ experience:
                 - title: "Proyecto: Haiku Learning Management System - Goshen, IN"
                 - title: "Proyecto: Interbank Banca Movil Update & Refactoring - Lima, Peru"
                 - title: "Proyecto: CICA Life Premium Calculator - Austin, TX"
-        - title: Practicante
-          subtitle: 2011 - 2012
+        - title: Desarollador de Aplicaciones
+          subtitle: 01/2011 - 03/2012
           places:
             - name: Online Studio Productions
               url: https://www.onlinestudioproductions.com/
@@ -103,6 +88,42 @@ experience:
                 - title: "Proyecto: Interactive Tale ( Los Tres Mosqueteros, Robin Hood, Tarzan, El Principito ) - Lima, Peru"
                 - title: "Proyecto: Ediciones Infantiles - Lima, Peru"
                 - title: "Proyecto: 365 Things to do as a Couple - Lima, Peru"
+        - title: '-'
+          subtitle: 
+          current: true
+          places:
+            - name:
+              url:
+        - title: Profesor Tiempo Parcial
+          subtitle: 01/2022 - presente
+          current: true
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: https://upc.edu.pe/
+              description: UPC es una de las universidades más prestigiosas del Perú
+              details:
+                - Enseñanza de cursos dentro del programa para profesionales que trabajan (EPE)
+                - "Lenguajes de programación: java, ruby"
+              projects:
+                - title: "Curso: Fundamentos de la Programación"
+                - title: "Curso: Estructura de Datos y Algoritmos"
+                - title: "Curso: Programación Orientada a Objetos"
+                - title: "Curso: Experiencia de Usuario (UX)"
+        - title: Asistente de Aprendizaje a Distancia
+          subtitle: 01/2020 - 12/2021
+          current: false
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: https://upc.edu.pe/
+              description: UPC es una de las universidades más prestigiosas del Perú
+              details:
+                - Enseñanza de cursos dentro del programa para profesionales que trabajan (EPE)
+                - "Lenguajes de programación: java, ruby"
+              projects:
+                - title: "Curso: Fundamentos de la Programación"
+                - title: "Curso: Estructura de Datos y Algoritmos"
+                - title: "Curso: Programación Orientada a Objetos"
+                - title: "Curso: Experiencia de Usuario (UX)"
 education:
     title: Educación
     content:

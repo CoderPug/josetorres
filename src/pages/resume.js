@@ -27,9 +27,9 @@ const ResumePage = () => {
                 <GridItem 
                     colStart={{md:2, base:2}}
                     colEnd={{md:8, base:8}}
-                    mt={{base: "20px", md:"140px"}}>
+                    mt={{base: "20px", md:"100px"}}>
 
-                    <Box lineHeight="short" fontSize="sm" marginTop="12">
+                    <Box lineHeight="short" fontSize="sm">
                         { resumeData.summary }
                     </Box>
                 </GridItem>

@@ -7,7 +7,7 @@ experience:
     title: Experience
     content:
         - title: Senior Software Engineer IV / Lead Engineer
-          subtitle: 2021 - present
+          subtitle: 10/2021 - now
           current: true
           places:
             - name: Glovo
@@ -18,27 +18,8 @@ experience:
               projects:
                 - title: "Team: Payments Experience - Barcelona, Spain"
                   current: true
-        - title: Part-Time Teacher
-          subtitle: 2020 - present
-          current: true
-          places:
-            - name: Universidad Peruana de Ciencias Aplicadas
-              url: https://upc.edu.pe/
-              description: UPC is one of the most important universities in Peru
-              details:
-                - Teaches courses in the program for people that work (EPE)
-                - Provides support to the teacher in charge of a classroom
-                - Reinforces the lessons by tutoring students
-                - Oversees lesson preparations
-                - Performs virtual coding sessions for programming courses
-                - "Programming languages: java, ruby"
-              projects:
-                - title: "Course: Fundamentals of Programming"
-                - title: "Course: Data Structures and Algorithms"
-                - title: "Course: Object-Oriented Programming"
-                - title: "Course: User Experience (UX)"
         - title: Senior Software Engineer / Tech Lead
-          subtitle: 2014 - 2021
+          subtitle: 02/2014 - 10/2021
           current: false
           places:
             - name: Santex Group
@@ -76,7 +57,7 @@ experience:
                 - title: "Project: MCCA MoCCA Service Order Delivery ( SOD ) - Boston, MA"
                 - title: "Project: MoCCA Upgrade - Boston, MA"
         - title: Software Engineer iOS
-          subtitle: 2012 - 2014
+          subtitle: 07/2012 - 01/2014
           places:
             - name: Avantica Technologies
               url: https://www.avantica.net/
@@ -90,8 +71,8 @@ experience:
                 - title: "Project: Haiku Learning Management System - Goshen, IN"
                 - title: "Project: Interbank Banca Movil Update & Refactoring - Lima, Peru"
                 - title: "Project: CICA Life Premium Calculator - Austin, TX"
-        - title: Intern
-          subtitle: 2011 - 2012
+        - title: App Developer
+          subtitle: 01/2011 - 03/2012
           places:
             - name: Online Studio Productions
               url: https://www.onlinestudioproductions.com/
@@ -105,6 +86,47 @@ experience:
                 - title: "Project: Interactive Tale ( Los Tres Mosqueteros, Robin Hood, Tarzan, El Principito ) - Lima, Peru"
                 - title: "Project: Ediciones Infantiles - Lima, Peru"
                 - title: "Project: 365 Things to do as a Couple - Lima, Peru"
+        - title: "-"
+          subtitle: 
+          current: 
+          places:
+            - name: 
+              url: 
+        - title: Part-Time Teacher
+          subtitle: 01/2022 - now
+          current: true
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: https://upc.edu.pe/
+              description: UPC is one of the most important universities in Peru
+              details:
+                - Teaches courses in the program for people that work (EPE)
+                - Oversees lesson preparations
+                - Performs virtual coding sessions for programming courses
+                - "Programming languages: java, ruby"
+              projects:
+                - title: "Course: Fundamentals of Programming"
+                - title: "Course: Data Structures and Algorithms"
+                - title: "Course: Object-Oriented Programming"
+                - title: "Course: User Experience (UX)"
+        - title: Assistant Teacher
+          subtitle: 01/2020 - 12/2021
+          current: false
+          places:
+            - name: Universidad Peruana de Ciencias Aplicadas
+              url: https://upc.edu.pe/
+              description: UPC is one of the most important universities in Peru
+              details:
+                - Provides support to the teacher in charge of a classroom
+                - Reinforces the lessons by tutoring students
+                - Oversees lesson preparations
+                - Performs virtual coding sessions for programming courses
+                - "Programming languages: java, ruby"
+              projects:
+                - title: "Course: Fundamentals of Programming"
+                - title: "Course: Data Structures and Algorithms"
+                - title: "Course: Object-Oriented Programming"
+                - title: "Course: User Experience (UX)"
 education:
     title: "Education"
     content:
